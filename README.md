@@ -2,6 +2,8 @@
 
 [한국어 README](README_KR.md)
 
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3839806573)
+
 XP Customizer is a RimWorld mod for changing XP requirements, learning speed, and skill progression. Its default settings are designed to preserve vanilla XP and learning behavior; features can be enabled separately.
 
 ## Features

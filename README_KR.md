@@ -2,6 +2,8 @@
 
 [English README](README.md)
 
+[Steam 창작마당](https://steamcommunity.com/sharedfiles/filedetails/?id=3839806573)
+
 정착민의 경험치 요구량, 학습 속도, 스킬 성장 방식을 조정하는 RimWorld 모드입니다. 초기 설정은 바닐라 경험치·학습 동작을 유지하도록 설계되었으며 대부분의 기능을 개별적으로 켜고 끌 수 있습니다.
 
 ## 주요 기능
