@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Learning_DailyCapTitle>일일 학습 한도</XPC_Learning_DailyCapTitle>
+  <XPC_Learning_DailyCapDescription>한도 초과 학습이 적용되기 전, 하루 동안 정상 효율로 획득할 수 있는 XP의 양을 설정합니다.</XPC_Learning_DailyCapDescription>
+  <XPC_Learning_DailyCapReset>일일 학습 한도를 바닐라로 복원</XPC_Learning_DailyCapReset>
+  <XPC_Learning_DailyCapBase>기본 일일 학습 한도</XPC_Learning_DailyCapBase>
+  <XPC_Learning_DailyCapRange>허용 범위: 0~9,999,999 XP   |   바닐라: 4,000 XP</XPC_Learning_DailyCapRange>
+  <XPC_Learning_DailyCapZero>0 XP로 설정하면 학습을 시작하더라도 정상 효율로 획득할 수 있는 일일 XP 허용량이 없습니다.</XPC_Learning_DailyCapZero>
+  <XPC_Learning_SourceToggle>학습 원천별 보정 사용자 지정</XPC_Learning_SourceToggle>
+  <XPC_Learning_SourceOn>켜짐: 해당 특성·유전자·건강 상태·이념 원천이 아래 기본 한도를 보정합니다.</XPC_Learning_SourceOn>
+  <XPC_Learning_SourceOff>꺼짐: XP Customizer가 원천별 일일 학습 한도 보너스나 페널티를 적용하지 않습니다.</XPC_Learning_SourceOff>
+  <XPC_Learning_SourceConversion>전체 학습 보너스의 일일 한도 변환: {0}%  (강도 {1}%)</XPC_Learning_SourceConversion>
+  <XPC_Learning_SourceStrengthRange>0% = 보정 없음   |   100% = 바닐라 학습 보너스의 20% 변환   |   200% = 40% 변환</XPC_Learning_SourceStrengthRange>
+  <XPC_Learning_SourceAutoDescription>자동은 바닐라 학습 효과를 일일 학습 한도 보정으로 환산합니다. 사용자 지정은 해당 원천의 최종 한도 보정률만 덮어씁니다.</XPC_Learning_SourceAutoDescription>
+  <XPC_Learning_SourceCustomDescription>사용자 지정값에는 전체 슬라이더가 곱해지지 않습니다(-100%~+100%). 예시 한도는 원천 1개, 현재 기본값, 의식 100%를 가정합니다.</XPC_Learning_SourceCustomDescription>
+  <XPC_Learning_SourceResetAuto>모든 원천에 자동 공식 사용</XPC_Learning_SourceResetAuto>
+  <XPC_Learning_SourceGroupTraits>기본 특성</XPC_Learning_SourceGroupTraits>
+  <XPC_Learning_SourceGroupAnomaly>아노말리</XPC_Learning_SourceGroupAnomaly>
+  <XPC_Learning_SourceGroupBiotech>바이오테크</XPC_Learning_SourceGroupBiotech>
+  <XPC_Learning_SourceGroupIdeology>이데올로기</XPC_Learning_SourceGroupIdeology>
+  <XPC_Learning_SourceGroupRoyalty>로열티</XPC_Learning_SourceGroupRoyalty>
+  <XPC_Learning_SourceSlowLearner>느린 학습자</XPC_Learning_SourceSlowLearner>
+  <XPC_Learning_SourceFastLearner>빠른 학습자</XPC_Learning_SourceFastLearner>
+  <XPC_Learning_SourceTooSmart>지나치게 똑똑함</XPC_Learning_SourceTooSmart>
+  <XPC_Learning_SourceBlissLobotomy>행복 전두엽 절제술</XPC_Learning_SourceBlissLobotomy>
+  <XPC_Learning_SourceSlowStudy>느린 학습</XPC_Learning_SourceSlowStudy>
+  <XPC_Learning_SourceQuickStudy>빠른 학습</XPC_Learning_SourceQuickStudy>
+  <XPC_Learning_SourceNeuralSupercharge>신경 과급</XPC_Learning_SourceNeuralSupercharge>
+  <XPC_Learning_SourceRanchingCentral>목축: 중심 (동물 한정)</XPC_Learning_SourceRanchingCentral>
+  <XPC_Learning_SourceLearningAssistant>학습 보조 장치</XPC_Learning_SourceLearningAssistant>
+  <XPC_Learning_SourceHeader>원천 (바닐라 학습 계수)</XPC_Learning_SourceHeader>
+  <XPC_Learning_ModeHeader>방식</XPC_Learning_ModeHeader>
+  <XPC_Learning_FinalHeader>최종 일일 한도 (%)</XPC_Learning_FinalHeader>
+  <XPC_Learning_ExampleHeader>예시 한도 (XP)</XPC_Learning_ExampleHeader>
+  <XPC_Learning_ModeCustom>사용자 지정</XPC_Learning_ModeCustom>
+  <XPC_Learning_ModeAuto>자동</XPC_Learning_ModeAuto>
+  <XPC_Learning_ModeCustomTooltip>사용자 지정: 전체 슬라이더와 무관하게 최종 일일 한도 보정률을 고정합니다. 클릭하면 자동으로 변경합니다.</XPC_Learning_ModeCustomTooltip>
+  <XPC_Learning_ModeAutoTooltip>자동: 바닐라 학습 보너스 × 현재 변환율. 클릭하면 최종 일일 한도 보정률을 직접 수정합니다.</XPC_Learning_ModeAutoTooltip>
+  <XPC_Learning_SourceSlowDescription>전체 학습 계수 x0.5</XPC_Learning_SourceSlowDescription>
+  <XPC_Learning_SourceRanchDescription>동물 학습 계수 x2</XPC_Learning_SourceRanchDescription>
+  <XPC_Learning_SourceGlobalDescription>전체 학습 계수 {0}%</XPC_Learning_SourceGlobalDescription>
+  <XPC_Learning_FurtherTitle>한도 초과 학습</XPC_Learning_FurtherTitle>
+  <XPC_Learning_FurtherDescription>일일 정상 효율 학습 한도를 모두 사용한 뒤의 학습 효율을 설정합니다.</XPC_Learning_FurtherDescription>
+  <XPC_Learning_ThresholdTitle>정신붕괴 임계값</XPC_Learning_ThresholdTitle>
+  <XPC_Learning_ThresholdDescription>정신붕괴 임계값이 낮으면 한도 초과 학습 효율이 증가하고, 높으면 감소합니다.</XPC_Learning_ThresholdDescription>
+  <XPC_Learning_ThresholdEnabled>효과 활성화</XPC_Learning_ThresholdEnabled>
+  <XPC_Learning_FurtherReset>한도 초과 학습을 바닐라로 복원</XPC_Learning_FurtherReset>
+  <XPC_Learning_ThresholdRange>0% = 효과 없음   |   60% = 모드 기본값   |   100% = 기준   |   200% = 효과 2배</XPC_Learning_ThresholdRange>
+  <XPC_Learning_TraitExamples>특성별 예시</XPC_Learning_TraitExamples>
+  <XPC_Learning_TraitExamplesDescription>바닐라 특성 하나만 적용한 예시이며, 추가 임계값 보정과 의식 효과는 제외합니다.</XPC_Learning_TraitExamplesDescription>
+  <XPC_Learning_BaseFactorTitle>기본 한도 초과 학습 효율</XPC_Learning_BaseFactorTitle>
+  <XPC_Learning_BaseFactorRange>허용 범위: 0%~100%   |   바닐라: 20%</XPC_Learning_BaseFactorRange>
+  <XPC_Learning_BaseFactorHelp>0% = 포화 후 XP 획득 없음   |   100% = 한도 초과 페널티 없음</XPC_Learning_BaseFactorHelp>
+  <XPC_Learning_ThresholdStrength>효과 강도: {0}%</XPC_Learning_ThresholdStrength>
+  <XPC_Learning_TraitIronWilled>강철 의지</XPC_Learning_TraitIronWilled>
+  <XPC_Learning_TraitSteadfast>굳센 의지</XPC_Learning_TraitSteadfast>
+  <XPC_Learning_TraitNone>특성 없음</XPC_Learning_TraitNone>
+  <XPC_Learning_TraitNervous>예민함</XPC_Learning_TraitNervous>
+  <XPC_Learning_TraitTooSmart>지나치게 똑똑함</XPC_Learning_TraitTooSmart>
+  <XPC_Learning_TraitVolatile>변덕스러움</XPC_Learning_TraitVolatile>
+  <XPC_Learning_TraitPreview>{0} ({1}%)  →  {2}%</XPC_Learning_TraitPreview>
+  <XPC_L3F3_BaseRangePart>허용 범위: 0%~100%</XPC_L3F3_BaseRangePart>
+  <XPC_L3F3_BaseVanillaPart>바닐라: 20%</XPC_L3F3_BaseVanillaPart>
+  <XPC_L3F3_ThresholdNeutralPart>0% = 임계값 보정 없음 (이 효과만 바닐라와 동일)</XPC_L3F3_ThresholdNeutralPart>
+  <XPC_L3F3_ThresholdOtherPart>60% = 모드 기본값  |  100% = 기준  |  200% = 효과 2배</XPC_L3F3_ThresholdOtherPart>
+  <XPC_L3F3_DailyCapRangePart>허용 범위: 0~9,999,999 XP</XPC_L3F3_DailyCapRangePart>
+  <XPC_L3F3_DailyCapVanillaPart>바닐라: 4,000 XP</XPC_L3F3_DailyCapVanillaPart>
+</LanguageData>

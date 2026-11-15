@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3B2_EditBoundaries>Edit stage boundaries</XPC_L3B2_EditBoundaries>
+  <XPC_L3B2_CloseEditor>Close boundary editor</XPC_L3B2_CloseEditor>
+  <XPC_L3B2_ResetWeights>Reset stage weights</XPC_L3B2_ResetWeights>
+  <XPC_L3B2_EditRangeHelp>Edit split levels from 1 to 19. Level 0 and level 20 are fixed endpoints.</XPC_L3B2_EditRangeHelp>
+  <XPC_L3B2_ApplyResetNotice>Applying boundary changes resets all stage weights to 1.00x.</XPC_L3B2_ApplyResetNotice>
+  <XPC_L3B2_DeduplicateNotice>Duplicate split levels are merged and the result is sorted when applied.</XPC_L3B2_DeduplicateNotice>
+  <XPC_L3B2_PendingBoundaries>Pending boundaries: {0}</XPC_L3B2_PendingBoundaries>
+  <XPC_L3B2_SplitAfterLevel>Split after level</XPC_L3B2_SplitAfterLevel>
+  <XPC_L3B2_Remove>Remove</XPC_L3B2_Remove>
+  <XPC_L3B2_AddSplit>+ Add split</XPC_L3B2_AddSplit>
+  <XPC_L3B2_Recommended>Recommended</XPC_L3B2_Recommended>
+  <XPC_L3B2_Apply>Apply</XPC_L3B2_Apply>
+  <XPC_L3B2_Cancel>Cancel</XPC_L3B2_Cancel>
+</LanguageData>

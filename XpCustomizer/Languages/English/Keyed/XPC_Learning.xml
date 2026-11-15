@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Learning_DailyCapTitle>Daily learning capacity</XPC_Learning_DailyCapTitle>
+  <XPC_Learning_DailyCapDescription>Sets how much XP a pawn can gain at full learning efficiency each day before Further Learning applies.</XPC_Learning_DailyCapDescription>
+  <XPC_Learning_DailyCapReset>Restore Learning Capacity to Vanilla</XPC_Learning_DailyCapReset>
+  <XPC_Learning_DailyCapBase>Base daily capacity</XPC_Learning_DailyCapBase>
+  <XPC_Learning_DailyCapRange>Allowed: 0 - 9,999,999 XP   |   Vanilla: 4,000 XP</XPC_Learning_DailyCapRange>
+  <XPC_Learning_DailyCapZero>0 XP means there is no daily full-rate XP allowance after learning begins.</XPC_Learning_DailyCapZero>
+  <XPC_Learning_SourceToggle>Customize source modifiers</XPC_Learning_SourceToggle>
+  <XPC_Learning_SourceOn>ON: matching traits, genes, health effects, and ideology sources modify the base capacity below.</XPC_Learning_SourceOn>
+  <XPC_Learning_SourceOff>OFF: XP Customizer does not add source-based Daily Capacity bonuses or penalties.</XPC_Learning_SourceOff>
+  <XPC_Learning_SourceConversion>Global learning bonus to DLC conversion: {0}%  (strength {1}%)</XPC_Learning_SourceConversion>
+  <XPC_Learning_SourceStrengthRange>0% = none   |   100% = convert 20% of vanilla LF bonus   |   200% = convert 40%</XPC_Learning_SourceStrengthRange>
+  <XPC_Learning_SourceAutoDescription>Auto converts the nominal vanilla learning effect into DLC. Custom overrides ONLY that source's final DLC percentage.</XPC_Learning_SourceAutoDescription>
+  <XPC_Learning_SourceCustomDescription>Custom is NOT multiplied by the global slider; -100% to +100%. Example cap assumes one source, current base, and 100% Consciousness.</XPC_Learning_SourceCustomDescription>
+  <XPC_Learning_SourceResetAuto>Use Auto formula for all sources</XPC_Learning_SourceResetAuto>
+  <XPC_Learning_SourceGroupTraits>Core traits</XPC_Learning_SourceGroupTraits>
+  <XPC_Learning_SourceGroupAnomaly>Anomaly</XPC_Learning_SourceGroupAnomaly>
+  <XPC_Learning_SourceGroupBiotech>Biotech</XPC_Learning_SourceGroupBiotech>
+  <XPC_Learning_SourceGroupIdeology>Ideology</XPC_Learning_SourceGroupIdeology>
+  <XPC_Learning_SourceGroupRoyalty>Royalty</XPC_Learning_SourceGroupRoyalty>
+  <XPC_Learning_SourceSlowLearner>Slow Learner</XPC_Learning_SourceSlowLearner>
+  <XPC_Learning_SourceFastLearner>Fast Learner</XPC_Learning_SourceFastLearner>
+  <XPC_Learning_SourceTooSmart>Too Smart</XPC_Learning_SourceTooSmart>
+  <XPC_Learning_SourceBlissLobotomy>Bliss Lobotomy</XPC_Learning_SourceBlissLobotomy>
+  <XPC_Learning_SourceSlowStudy>Slow Study</XPC_Learning_SourceSlowStudy>
+  <XPC_Learning_SourceQuickStudy>Quick Study</XPC_Learning_SourceQuickStudy>
+  <XPC_Learning_SourceNeuralSupercharge>Neural Supercharge</XPC_Learning_SourceNeuralSupercharge>
+  <XPC_Learning_SourceRanchingCentral>Ranching: Central (Animals only)</XPC_Learning_SourceRanchingCentral>
+  <XPC_Learning_SourceLearningAssistant>Learning Assistant</XPC_Learning_SourceLearningAssistant>
+  <XPC_Learning_SourceHeader>Source (vanilla LF)</XPC_Learning_SourceHeader>
+  <XPC_Learning_ModeHeader>Mode</XPC_Learning_ModeHeader>
+  <XPC_Learning_FinalHeader>Final DLC (%)</XPC_Learning_FinalHeader>
+  <XPC_Learning_ExampleHeader>Example cap (XP)</XPC_Learning_ExampleHeader>
+  <XPC_Learning_ModeCustom>Custom</XPC_Learning_ModeCustom>
+  <XPC_Learning_ModeAuto>Auto</XPC_Learning_ModeAuto>
+  <XPC_Learning_ModeCustomTooltip>Custom: fixed final DLC bonus/penalty, independent of the global slider. Click for Auto.</XPC_Learning_ModeCustomTooltip>
+  <XPC_Learning_ModeAutoTooltip>Auto: vanilla LF source bonus × current conversion. Click to edit final DLC %.</XPC_Learning_ModeAutoTooltip>
+  <XPC_Learning_SourceSlowDescription>x0.5 Global LF</XPC_Learning_SourceSlowDescription>
+  <XPC_Learning_SourceRanchDescription>x2 Animals LF</XPC_Learning_SourceRanchDescription>
+  <XPC_Learning_SourceGlobalDescription>{0}% Global LF</XPC_Learning_SourceGlobalDescription>
+  <XPC_Learning_FurtherTitle>Further learning</XPC_Learning_FurtherTitle>
+  <XPC_Learning_FurtherDescription>Controls learning efficiency after daily full-rate learning is exhausted.</XPC_Learning_FurtherDescription>
+  <XPC_Learning_ThresholdTitle>Mental Break Threshold</XPC_Learning_ThresholdTitle>
+  <XPC_Learning_ThresholdDescription>Lower break thresholds boost post-cap learning; higher thresholds reduce it.</XPC_Learning_ThresholdDescription>
+  <XPC_Learning_ThresholdEnabled>Enable effect</XPC_Learning_ThresholdEnabled>
+  <XPC_Learning_FurtherReset>Restore Further Learning to Vanilla</XPC_Learning_FurtherReset>
+  <XPC_Learning_ThresholdRange>0% = no effect   |   60% = mod default   |   100% = reference   |   200% = double effect</XPC_Learning_ThresholdRange>
+  <XPC_Learning_TraitExamples>Trait examples</XPC_Learning_TraitExamples>
+  <XPC_Learning_TraitExamplesDescription>Single vanilla trait; no additional threshold modifiers or Consciousness.</XPC_Learning_TraitExamplesDescription>
+  <XPC_Learning_BaseFactorTitle>Base post-cap efficiency</XPC_Learning_BaseFactorTitle>
+  <XPC_Learning_BaseFactorRange>Allowed range: 0% – 100%   |   Vanilla: 20%</XPC_Learning_BaseFactorRange>
+  <XPC_Learning_BaseFactorHelp>0% = no XP after saturation   |   100% = no post-cap penalty</XPC_Learning_BaseFactorHelp>
+  <XPC_Learning_ThresholdStrength>Effect strength: {0}%</XPC_Learning_ThresholdStrength>
+  <XPC_Learning_TraitIronWilled>Iron-willed</XPC_Learning_TraitIronWilled>
+  <XPC_Learning_TraitSteadfast>Steadfast</XPC_Learning_TraitSteadfast>
+  <XPC_Learning_TraitNone>No trait</XPC_Learning_TraitNone>
+  <XPC_Learning_TraitNervous>Nervous</XPC_Learning_TraitNervous>
+  <XPC_Learning_TraitTooSmart>Too smart</XPC_Learning_TraitTooSmart>
+  <XPC_Learning_TraitVolatile>Volatile</XPC_Learning_TraitVolatile>
+  <XPC_Learning_TraitPreview>{0} ({1}%)  -&gt;  {2}%</XPC_Learning_TraitPreview>
+  <XPC_L3F3_BaseRangePart>Allowed range: 0% – 100%</XPC_L3F3_BaseRangePart>
+  <XPC_L3F3_BaseVanillaPart>Vanilla: 20%</XPC_L3F3_BaseVanillaPart>
+  <XPC_L3F3_ThresholdNeutralPart>0% = no threshold adjustment (Vanilla)</XPC_L3F3_ThresholdNeutralPart>
+  <XPC_L3F3_ThresholdOtherPart>60% = mod default  |  100% = reference  |  200% = double effect</XPC_L3F3_ThresholdOtherPart>
+  <XPC_L3F3_DailyCapRangePart>Allowed: 0 - 9,999,999 XP</XPC_L3F3_DailyCapRangePart>
+  <XPC_L3F3_DailyCapVanillaPart>Vanilla: 4,000 XP</XPC_L3F3_DailyCapVanillaPart>
+</LanguageData>

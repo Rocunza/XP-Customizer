@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_L3B_TotalMultiplierTitle>총 XP 배율</XPC_L3B_TotalMultiplierTitle>
+  <XPC_L3B_TotalMultiplierDescription>스킬 0레벨부터 20레벨까지 필요한 총 XP를 조절합니다.</XPC_L3B_TotalMultiplierDescription>
+  <XPC_L3B_TotalMultiplierRange>허용 범위: 0.01x – 100.00x   |   바닐라: 1.00x</XPC_L3B_TotalMultiplierRange>
+  <XPC_L3F3_CareerRangeMuted>허용 범위: 0.01x – 100.00x   |</XPC_L3F3_CareerRangeMuted>
+  <XPC_L3F3_CareerRangeVanilla>바닐라: 1.00x</XPC_L3F3_CareerRangeVanilla>
+  <XPC_L3B_VanillaTotalXp>바닐라 총 XP: {0}</XPC_L3B_VanillaTotalXp>
+  <XPC_L3B_CustomTotalXp>커스텀 총 XP: {0}</XPC_L3B_CustomTotalXp>
+  <XPC_L3B_DistributionTitle>XP 분배</XPC_L3B_DistributionTitle>
+  <XPC_L3B_DistributionDescription>선택한 총 XP를 수정 가능한 레벨 구간에 나누어 배분합니다. 실제 게임 XP 계산에 적용됩니다.</XPC_L3B_DistributionDescription>
+  <XPC_L3B_BoundariesApplyNotice>아래에서 단계 경계를 편집할 수 있습니다. 변경 내용은 적용 버튼을 눌렀을 때만 반영됩니다.</XPC_L3B_BoundariesApplyNotice>
+  <XPC_L3B_UseCustomDistribution>단계별 XP 분배 사용</XPC_L3B_UseCustomDistribution>
+  <XPC_L3B_CurrentBoundaries>현재 단계 경계: {0}</XPC_L3B_CurrentBoundaries>
+  <XPC_L3B_WeightsHelp>잠금 해제된 단계는 가중치에 따라 남은 XP를 나눕니다. L로 단계 비중을 잠글 수 있으며 최소 1개 단계는 잠금 해제 상태여야 합니다.</XPC_L3B_WeightsHelp>
+  <XPC_L3B_LevelRange>레벨 {0}–{1}</XPC_L3B_LevelRange>
+  <XPC_L3B_VanillaDistributionActive>현재 바닐라 XP 분배를 사용합니다. 저장된 단계 가중치는 적용되지 않습니다.</XPC_L3B_VanillaDistributionActive>
+  <XPC_L3B_RoundingTitle>XP 반올림</XPC_L3B_RoundingTitle>
+  <XPC_L3B_RoundingExact>정확한 값</XPC_L3B_RoundingExact>
+  <XPC_L3B_RoundingDescription>각 레벨업에 필요한 XP를 반올림합니다. 정확한 값은 계산 결과를 그대로 유지합니다.</XPC_L3B_RoundingDescription>
+  <XPC_L3B_RoundingFallback>요청 반올림: {0}   |   실제 적용: {1} (현재 총 XP가 적어 요청한 단위를 사용할 수 없습니다.)</XPC_L3B_RoundingFallback>
+  <XPC_L3B_HeaderStage>단계</XPC_L3B_HeaderStage>
+  <XPC_L3B_HeaderWeight>가중치</XPC_L3B_HeaderWeight>
+  <XPC_L3B_HeaderShare>비중</XPC_L3B_HeaderShare>
+  <XPC_L3B_HeaderCustomXp>커스텀 XP</XPC_L3B_HeaderCustomXp>
+  <XPC_L3B_HeaderVanillaShare>바닐라 비중</XPC_L3B_HeaderVanillaShare>
+  <XPC_L3B_HeaderVanillaXp>바닐라 XP</XPC_L3B_HeaderVanillaXp>
+  <XPC_L3B_LockTip>L: 이 단계의 목표 XP 비중을 잠그거나 해제합니다. 잠금 해제된 단계는 남은 XP를 가중치에 따라 나눕니다.</XPC_L3B_LockTip>
+  <XPC_L3B_LockedShareTip>목표 {0}% | 적용 {1}% (XP 반올림으로 실제 비중이 달라질 수 있음)</XPC_L3B_LockedShareTip>
+</LanguageData>

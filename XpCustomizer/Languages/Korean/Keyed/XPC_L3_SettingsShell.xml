@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3_TabProgression>커스텀 XP</XPC_L3_TabProgression>
+  <XPC_L3_TabLearning>학습</XPC_L3_TabLearning>
+  <XPC_L3_TabDecay>경험치 감소</XPC_L3_TabDecay>
+  <XPC_L3_TabBiotech>바이오테크</XPC_L3_TabBiotech>
+  <XPC_L3_TabCons>의식</XPC_L3_TabCons>
+  <XPC_L3_TabGWS>전역작업속도</XPC_L3_TabGWS>
+  <XPC_L3_TabInsp>영감</XPC_L3_TabInsp>
+  <XPC_L3_TabCombat>전투</XPC_L3_TabCombat>
+  <XPC_L3_QuickProfilesFull>빠른 프로필 ▼</XPC_L3_QuickProfilesFull>
+  <XPC_L3_QuickProfilesShort>빠른 ▼</XPC_L3_QuickProfilesShort>
+  <XPC_L3_QuickProfilesTip>저장된 프로필을 선택합니다. 목록에서 프로필을 고르면 검증용 확인창이 열립니다. 프로필 적용에는 별도의 명시적 승인이 필요하며, 목록을 여는 것만으로 설정은 적용되지 않습니다.</XPC_L3_QuickProfilesTip>
+  <XPC_L3_ManageProfilesTip>프로필 관리자를 열어 저장, 확인, 이름 변경, 업데이트, 삭제 및 복원을 수행합니다. 목록을 살펴보는 것만으로 현재 XP 설정은 바뀌지 않으며, 프로필 적용에는 별도의 확인이 필요합니다.</XPC_L3_ManageProfilesTip>
+  <XPC_L3_ManageProfilesFull>프로필 관리</XPC_L3_ManageProfilesFull>
+  <XPC_L3_ManageProfilesMedium>프로필...</XPC_L3_ManageProfilesMedium>
+  <XPC_L3_ManageProfilesShort>프로필</XPC_L3_ManageProfilesShort>
+  <XPC_L3_ResetDefaultsTip>켜기/끄기 스위치와 곡선 모드를 포함한 모든 XP Customizer 설정을 모드 설치 기본값으로 복원합니다. 기존 프로필은 보존됩니다. 초기화를 확인하면 누락된 기본 제공 프로필(Long x3 / Very Long x6)이 다시 생성됩니다.</XPC_L3_ResetDefaultsTip>
+  <XPC_L3_ResetDefaultsLabel>모드 기본값 복원</XPC_L3_ResetDefaultsLabel>
+  <XPC_L3_ReserveTitle>20레벨 보유 XP 한도</XPC_L3_ReserveTitle>
+  <XPC_L3_ReserveDesc>스킬 경험치 감소로 19레벨로 내려가기 전에 20레벨에서 보유할 수 있는 XP 양을 설정합니다.</XPC_L3_ReserveDesc>
+  <XPC_L3_ReserveMultiplier>보유 한도 배율</XPC_L3_ReserveMultiplier>
+  <XPC_L3_ReserveRange>허용 범위: 0.01x – 100.00x   |   바닐라: 1.00x</XPC_L3_ReserveRange>
+  <XPC_L3F3_ReserveRangeMuted>허용 범위: 0.01x – 100.00x   |</XPC_L3F3_ReserveRangeMuted>
+  <XPC_L3F3_ReserveRangeVanilla>바닐라: 1.00x</XPC_L3F3_ReserveRangeVanilla>
+  <XPC_L3_ReserveVanillaPrefix>바닐라 보유 XP:</XPC_L3_ReserveVanillaPrefix>
+  <XPC_L3_ReserveCustomPrefix>사용자 지정 보유 XP:</XPC_L3_ReserveCustomPrefix>
+</LanguageData>

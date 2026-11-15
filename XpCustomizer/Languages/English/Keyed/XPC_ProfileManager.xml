@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_Profile_Title>Profile Manager</XPC_Profile_Title>
+  <XPC_Profile_Subtitle>Browse and save snapshots</XPC_Profile_Subtitle>
+  <XPC_Profile_SaveCurrent>Save Current...</XPC_Profile_SaveCurrent>
+  <XPC_Profile_Active>Active</XPC_Profile_Active>
+  <XPC_Profile_ActiveSelected>Active  *</XPC_Profile_ActiveSelected>
+  <XPC_Profile_Trash>Trash</XPC_Profile_Trash>
+  <XPC_Profile_TrashSelected>Trash  *</XPC_Profile_TrashSelected>
+  <XPC_Profile_EmptyTrash>Empty Trash...</XPC_Profile_EmptyTrash>
+  <XPC_Profile_TrashEmpty>Trash is empty.</XPC_Profile_TrashEmpty>
+  <XPC_Profile_TrashDisabledTip>Resolve the Trash listing error or session lock before permanent deletion.</XPC_Profile_TrashDisabledTip>
+  <XPC_Profile_Refresh>Refresh</XPC_Profile_Refresh>
+  <XPC_Profile_Close>Close</XPC_Profile_Close>
+  <XPC_Profile_RecoveryLock>RECOVERY REQUIRED: profile writes locked until restart and backup inspection.</XPC_Profile_RecoveryLock>
+  <XPC_Profile_SavedList>Saved profiles</XPC_Profile_SavedList>
+  <XPC_Profile_DeletedList>Deleted profiles</XPC_Profile_DeletedList>
+  <XPC_Profile_ListCounts>{0} valid  |  {1} damaged/unsupported</XPC_Profile_ListCounts>
+  <XPC_Profile_ListReadFailure>Could not list profiles: {0}. Check folder permissions and refresh.</XPC_Profile_ListReadFailure>
+  <XPC_Profile_NoProfiles>No saved profiles yet. Click Save Current to create one.</XPC_Profile_NoProfiles>
+  <XPC_Profile_RowFormat>Format v{0}  |  ID {1}</XPC_Profile_RowFormat>
+  <XPC_Profile_DetailsTitle>Profile details</XPC_Profile_DetailsTitle>
+  <XPC_Profile_RenameButton>Rename...</XPC_Profile_RenameButton>
+  <XPC_Profile_RestoreButton>Restore...</XPC_Profile_RestoreButton>
+  <XPC_Profile_UpdateShort>Update Settings...</XPC_Profile_UpdateShort>
+  <XPC_Profile_UpdateLong>Update Saved Settings...</XPC_Profile_UpdateLong>
+  <XPC_Profile_DeleteButton>Delete...</XPC_Profile_DeleteButton>
+  <XPC_Profile_SelectHelp>Select a profile on the left to inspect it. Browsing never changes current XP settings.</XPC_Profile_SelectHelp>
+  <XPC_Profile_PreviewError>Cannot preview: {0}. The file was not changed. Refresh to try again.</XPC_Profile_PreviewError>
+  <XPC_Profile_PreviewName>Name: {0}</XPC_Profile_PreviewName>
+  <XPC_Profile_PreviewUpdated>Updated (UTC): {0}</XPC_Profile_PreviewUpdated>
+  <XPC_Profile_PreviewCreated>Created (UTC): {0}</XPC_Profile_PreviewCreated>
+  <XPC_Profile_PreviewFormat>Format v{0}  |  Settings schema v{1}</XPC_Profile_PreviewFormat>
+  <XPC_Profile_PreviewTrash>Deleted profile snapshot. Restore moves it to Active.</XPC_Profile_PreviewTrash>
+  <XPC_Profile_PreviewVerified>Verified on selection; no settings were applied.</XPC_Profile_PreviewVerified>
+  <XPC_Profile_SummaryTitle>SETTINGS SUMMARY</XPC_Profile_SummaryTitle>
+  <XPC_Profile_TechnicalTitle>TECHNICAL DETAILS</XPC_Profile_TechnicalTitle>
+  <XPC_Profile_PreviewId>ID: {0}</XPC_Profile_PreviewId>
+  <XPC_Profile_PreviewGame>Game: {0}</XPC_Profile_PreviewGame>
+  <XPC_Profile_PreviewBuild>Build: {0}</XPC_Profile_PreviewBuild>
+  <XPC_Profile_PreviewFingerprint>Schema fingerprint: {0}</XPC_Profile_PreviewFingerprint>
+  <XPC_Profile_SectionCount>{0} ({1} fields)</XPC_Profile_SectionCount>
+  <XPC_Profile_AdditionalFields>  ... {0} additional fields</XPC_Profile_AdditionalFields>
+  <XPC_Profile_ValueNull>null</XPC_Profile_ValueNull>
+  <XPC_Profile_ValueTrue>true</XPC_Profile_ValueTrue>
+  <XPC_Profile_ValueFalse>false</XPC_Profile_ValueFalse>
+  <XPC_Profile_ValueMap>map [{0} entries]</XPC_Profile_ValueMap>
+  <XPC_Profile_ValueList>list [{0} entries]</XPC_Profile_ValueList>
+  <XPC_Profile_ValueUnsupported>(unsupported preview type)</XPC_Profile_ValueUnsupported>
+  <XPC_Profile_Valid>Valid profile</XPC_Profile_Valid>
+  <XPC_Profile_NotFound>File not found</XPC_Profile_NotFound>
+  <XPC_Profile_AlreadyExists>Profile ID already exists</XPC_Profile_AlreadyExists>
+  <XPC_Profile_Conflict>File changed since listing</XPC_Profile_Conflict>
+  <XPC_Profile_InvalidArgument>Invalid profile identifier</XPC_Profile_InvalidArgument>
+  <XPC_Profile_InvalidFormat>Damaged or invalid JSON/UTF-8</XPC_Profile_InvalidFormat>
+  <XPC_Profile_UnsupportedVersion>Unsupported profile version</XPC_Profile_UnsupportedVersion>
+  <XPC_Profile_IdMismatch>Filename and document ID mismatch</XPC_Profile_IdMismatch>
+  <XPC_Profile_FileTooLarge>Profile exceeds file-size limit</XPC_Profile_FileTooLarge>
+  <XPC_Profile_SecurityRejected>Unsafe file path rejected</XPC_Profile_SecurityRejected>
+  <XPC_Profile_AtomicReplaceUnavailable>Safe file replacement unavailable</XPC_Profile_AtomicReplaceUnavailable>
+  <XPC_Profile_IoError>Disk access failed</XPC_Profile_IoError>
+  <XPC_Profile_RecoveryRequired>Manual recovery may be needed</XPC_Profile_RecoveryRequired>
+  <XPC_Profile_InjectedFailure>Test fault</XPC_Profile_InjectedFailure>
+  <XPC_Profile_UnknownStorage>Unknown storage result</XPC_Profile_UnknownStorage>
+  <XPC_Profile_InitialStatus>Profiles are read-only in this phase. No game settings will be applied.</XPC_Profile_InitialStatus>
+  <XPC_Profile_StatusRefreshed>List refreshed. Select a row to inspect it; no settings are applied.</XPC_Profile_StatusRefreshed>
+  <XPC_Profile_StatusListFailed>Listing failed: {0}. Refresh after resolving the issue.</XPC_Profile_StatusListFailed>
+  <XPC_Profile_StatusListUnavailable>Unable to read profile listing. Check configuration-folder access.</XPC_Profile_StatusListUnavailable>
+  <XPC_Profile_StatusSelectionGone>The selected item is no longer in the displayed list. Refresh.</XPC_Profile_StatusSelectionGone>
+  <XPC_Profile_StatusFileUnavailable>File unavailable: {0}. No file was modified.</XPC_Profile_StatusFileUnavailable>
+  <XPC_Profile_StatusTrashPreview>Deleted profile preview (snapshot). Nothing was restored.</XPC_Profile_StatusTrashPreview>
+  <XPC_Profile_StatusSelectionFailed>Profile changed or could not be opened: {0}. Refresh.</XPC_Profile_StatusSelectionFailed>
+  <XPC_Profile_StatusExternalChange>Profile was modified outside this window. Refresh before selecting again.</XPC_Profile_StatusExternalChange>
+  <XPC_Profile_StatusActivePreview>Read-only profile preview. No game settings were changed.</XPC_Profile_StatusActivePreview>
+  <XPC_Profile_StatusReadFailure>Could not read selected profile. Refresh after checking file access.</XPC_Profile_StatusReadFailure>
+  <XPC_Profile_OverwriteSame>Saved settings already match current settings. No write.</XPC_Profile_OverwriteSame>
+  <XPC_Profile_OverwriteReview>Overwrite confirmation opened. Current JSON unchanged until approval.</XPC_Profile_OverwriteReview>
+  <XPC_Profile_OverwriteEditPending>Overwrite blocked: finish numeric editing in the settings tab.</XPC_Profile_OverwriteEditPending>
+  <XPC_Profile_OverwriteFocusUncertain>Overwrite blocked: numeric focus not settled ({0}). Return to the settings tab and finish editing.</XPC_Profile_OverwriteFocusUncertain>
+  <XPC_Profile_OverwriteConflict>Overwrite blocked: selected profile changed. Refresh the list.</XPC_Profile_OverwriteConflict>
+  <XPC_Profile_OverwriteBlocked>Overwrite blocked: {0}. Resolve the issue before proceeding.</XPC_Profile_OverwriteBlocked>
+  <XPC_Profile_OverwriteSuccess>Saved settings updated. Previous JSON retained as backup.</XPC_Profile_OverwriteSuccess>
+  <XPC_Profile_OverwriteRefreshUncertain>JSON updated; selection refresh uncertain. Reopen and inspect files.</XPC_Profile_OverwriteRefreshUncertain>
+  <XPC_Profile_OverwriteFailure>Overwrite not completed: {0}. Inspect status before retrying.</XPC_Profile_OverwriteFailure>
+  <XPC_Profile_DeleteSelectionChanged>Delete cancelled: selection changed. Refresh and select again.</XPC_Profile_DeleteSelectionChanged>
+  <XPC_Profile_DeleteMoved>Profile moved to Trash. Select Trash to restore it.</XPC_Profile_DeleteMoved>
+  <XPC_Profile_DeleteMovedRefreshFailed>Profile moved, but refresh failed. Reopen and inspect Trash.</XPC_Profile_DeleteMovedRefreshFailed>
+  <XPC_Profile_DeleteNotConfirmed>Delete not confirmed: {0}. Refresh and inspect files before any retry.</XPC_Profile_DeleteNotConfirmed>
+  <XPC_Profile_RestoreSuccess>Profile restored to Active. No game settings were applied.</XPC_Profile_RestoreSuccess>
+  <XPC_Profile_RestoreRefreshUncertain>Restore committed; refresh/selection uncertain. Reopen and inspect Active.</XPC_Profile_RestoreRefreshUncertain>
+  <XPC_Profile_RestoreNotConfirmed>Restore not confirmed: {0}. No overwrite or automatic retry was attempted.</XPC_Profile_RestoreNotConfirmed>
+  <XPC_Profile_RenameUnexpected>Rename result could not be verified: {0}. Inspect before retrying.</XPC_Profile_RenameUnexpected>
+  <XPC_Profile_RenameNoChange>Name unchanged. No profile file was written.</XPC_Profile_RenameNoChange>
+  <XPC_Profile_RenameSuccess>Profile renamed. Settings and identity preserved; backup retained.</XPC_Profile_RenameSuccess>
+  <XPC_Profile_RenameRefreshUncertain>Rename committed; refresh/selection could not be verified. Reopen the list.</XPC_Profile_RenameRefreshUncertain>
+  <XPC_Profile_CreateFailed>Profile creation failed: {0}.</XPC_Profile_CreateFailed>
+  <XPC_Profile_CreateSuccess>Profile saved. No live settings were changed.</XPC_Profile_CreateSuccess>
+  <XPC_Profile_CreateRefreshUncertain>Profile created, but selection could not be confirmed. Refresh.</XPC_Profile_CreateRefreshUncertain>
+  <XPC_Profile_QuickUnknown>! Unknown profile row</XPC_Profile_QuickUnknown>
+  <XPC_Profile_QuickInvalid>! Invalid profile record</XPC_Profile_QuickInvalid>
+  <XPC_Profile_QuickEmpty>No saved profiles. Use Manage Profiles to create one.</XPC_Profile_QuickEmpty>
+  <XPC_Profile_QuickListingFailure>! Cannot read profiles: {0}</XPC_Profile_QuickListingFailure>
+  <XPC_Profile_QuickInvalidRow>! {0}  ({1})</XPC_Profile_QuickInvalidRow>
+  <XPC_Profile_QuickVerifyFailed>Profile could not be verified: {0}. Refresh before retrying.</XPC_Profile_QuickVerifyFailed>
+  <XPC_Profile_QuickReviewFailed>Cannot review selected XP profile: {0}.</XPC_Profile_QuickReviewFailed>
+  <XPC_Profile_QuickWindowFailed>Could not open XP profile review window.</XPC_Profile_QuickWindowFailed>
+  <XPC_Profile_TrashNoDelete>Trash is empty. Nothing was deleted.</XPC_Profile_TrashNoDelete>
+  <XPC_Profile_TrashCannotEmpty>Cannot empty Trash: {0}. Refresh and inspect the entries.</XPC_Profile_TrashCannotEmpty>
+  <XPC_Profile_TrashConfirmCancelled>Empty Trash cancelled: view or session changed. No deletion attempted.</XPC_Profile_TrashConfirmCancelled>
+  <XPC_Profile_TrashDeleted>Permanently deleted {0} XP profiles. Trash is now empty.</XPC_Profile_TrashDeleted>
+  <XPC_Profile_TrashDeletedRefreshUncertain>Deletion verified for {0} profiles, but UI refresh could not confirm the empty list. Reopen Trash.</XPC_Profile_TrashDeletedRefreshUncertain>
+  <XPC_Profile_TrashStopped>Trash deletion STOPPED ({0}). Verified deleted: {1}/{2}. Do not retry this session; inspect your external backup.</XPC_Profile_TrashStopped>
+  <XPC_Profile_TrashFailure>Trash not emptied: {0}. Refresh and check that files were not modified.</XPC_Profile_TrashFailure>
+  <XPC_Profile_Review_InvalidSelection>The selected profile is invalid</XPC_Profile_Review_InvalidSelection>
+  <XPC_Profile_Review_Conflict>The profile or current settings changed; reselect it</XPC_Profile_Review_Conflict>
+  <XPC_Profile_Review_PendingEdit>Finish editing the numeric field first</XPC_Profile_Review_PendingEdit>
+  <XPC_Profile_Review_Uncertain>An editor is not ready; close and reopen the settings</XPC_Profile_Review_Uncertain>
+  <XPC_Profile_Review_InvalidProfile>The profile data failed validation</XPC_Profile_Review_InvalidProfile>
+  <XPC_Profile_Review_InvalidSettings>Current XP settings failed validation</XPC_Profile_Review_InvalidSettings>
+  <XPC_Profile_Review_StorageFailure>Could not safely read the saved profile</XPC_Profile_Review_StorageFailure>
+  <XPC_Profile_Review_RecoveryRequired>Recovery lock is active; restart after preserving backups</XPC_Profile_Review_RecoveryRequired>
+  <XPC_Profile_Review_InternalFailure>An internal review error occurred</XPC_Profile_Review_InternalFailure>
+  <XPC_Profile_Review_Cancelled>Review was cancelled</XPC_Profile_Review_Cancelled>
+  <XPC_Profile_Review_Default>Review could not be completed</XPC_Profile_Review_Default>
+  <XPC_Profile_EditNotes>Edit Notes</XPC_Profile_EditNotes>
+  <XPC_Profile_NotesLabel>Notes</XPC_Profile_NotesLabel>
+  <XPC_Profile_NotesEmpty>(No notes)</XPC_Profile_NotesEmpty>
+  <XPC_Profile_NotesSaved>Notes saved.</XPC_Profile_NotesSaved>
+  <XPC_Profile_NotesUnchanged>Notes unchanged.</XPC_Profile_NotesUnchanged>
+  <XPC_Profile_NotesRefreshFailed>Notes saved; refresh to view the change.</XPC_Profile_NotesRefreshFailed>
+</LanguageData>

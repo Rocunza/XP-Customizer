@@ -1,0 +1,86 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_ProfileDialog_Cancel>취소</XPC_ProfileDialog_Cancel>
+  <XPC_ProfileDialog_ProfileLabel>프로필: {0}</XPC_ProfileDialog_ProfileLabel>
+  <XPC_ProfileDialog_ProfileId>프로필 ID: {0}</XPC_ProfileDialog_ProfileId>
+  <XPC_ProfileDialog_Unnamed>(이름 없음)</XPC_ProfileDialog_Unnamed>
+  <XPC_ProfileDialog_OverwriteTitle>저장된 프로필 설정 덮어쓰기</XPC_ProfileDialog_OverwriteTitle>
+  <XPC_ProfileDialog_OverwriteWarning>현재 XP 설정으로 이 프로필의 저장된 설정을 덮어쓰시겠습니까?
+프로필 이름과 ID는 유지되며 백업도 보존됩니다.</XPC_ProfileDialog_OverwriteWarning>
+  <XPC_ProfileDialog_OverwriteScope>프로필 JSON만 변경됩니다. 현재 게임에 설정이 적용되지 않고 XP 동작도 바뀌지 않으며 모드 설정 XML도 저장하지 않습니다.</XPC_ProfileDialog_OverwriteScope>
+  <XPC_ProfileDialog_OverwriteSuccess>프로필 JSON 저장·검증 완료. 백업이 유지되었습니다.</XPC_ProfileDialog_OverwriteSuccess>
+  <XPC_ProfileDialog_OverwriteFailure>덮어쓰기 미완료: {0} / {1}</XPC_ProfileDialog_OverwriteFailure>
+  <XPC_ProfileDialog_OverwriteButton>프로필 덮어쓰기</XPC_ProfileDialog_OverwriteButton>
+  <XPC_ProfileDialog_RenameTitle>저장된 프로필 이름 변경</XPC_ProfileDialog_RenameTitle>
+  <XPC_ProfileDialog_RenameScope>표시 이름만 변경하며 저장된 XP 설정은 그대로 유지합니다.</XPC_ProfileDialog_RenameScope>
+  <XPC_ProfileDialog_RenameOriginal>프로필 ID: {0}   |   기존 이름: {1}</XPC_ProfileDialog_RenameOriginal>
+  <XPC_ProfileDialog_RenameNewName>새 이름 (1~80자)</XPC_ProfileDialog_RenameNewName>
+  <XPC_ProfileDialog_RenameNameHint>올바른 이름을 입력하세요. 제어 문자는 사용할 수 없습니다.</XPC_ProfileDialog_RenameNameHint>
+  <XPC_ProfileDialog_RenameNoApply>이름만 변경되며 현재 게임 설정은 적용되지 않습니다.</XPC_ProfileDialog_RenameNoApply>
+  <XPC_ProfileDialog_RenameInvalidInput>올바른 이름을 입력하세요 (1~80자).</XPC_ProfileDialog_RenameInvalidInput>
+  <XPC_ProfileDialog_RenameButton>이름 변경</XPC_ProfileDialog_RenameButton>
+  <XPC_ProfileDialog_RenameNull>이름 변경 실패: 결과를 확인할 수 없습니다.</XPC_ProfileDialog_RenameNull>
+  <XPC_ProfileDialog_RenameSuccess>프로필 이름을 변경했습니다.</XPC_ProfileDialog_RenameSuccess>
+  <XPC_ProfileDialog_RenameNoChange>이름이 변경되지 않아 파일을 쓰지 않았습니다.</XPC_ProfileDialog_RenameNoChange>
+  <XPC_ProfileDialog_RenameInvalidSelection>잘못된 선택입니다. 창을 닫고 프로필을 다시 선택하세요.</XPC_ProfileDialog_RenameInvalidSelection>
+  <XPC_ProfileDialog_RenameConflict>파일이 변경됐습니다. 창을 닫고 새로고침 후 다시 선택하세요.</XPC_ProfileDialog_RenameConflict>
+  <XPC_ProfileDialog_RenameRecovery>복구 확인이 필요합니다! 재시작과 백업 확인 전까지 프로필 저장이 차단됩니다.</XPC_ProfileDialog_RenameRecovery>
+  <XPC_ProfileDialog_RenameStorageFailure>이름 변경 실패: {0}. 다시 시도하기 전에 백업을 확인하세요.</XPC_ProfileDialog_RenameStorageFailure>
+  <XPC_ProfileDialog_DeleteTitle>프로필을 휴지통으로 이동할까요?</XPC_ProfileDialog_DeleteTitle>
+  <XPC_ProfileDialog_DeleteWarning>선택한 프로필 JSON만 휴지통으로 옮깁니다. 현재 XP 설정을 적용하거나 변경하지 않으며, 나중에 복원할 수 있습니다.</XPC_ProfileDialog_DeleteWarning>
+  <XPC_ProfileDialog_DeleteButton>휴지통으로 이동</XPC_ProfileDialog_DeleteButton>
+  <XPC_ProfileDialog_TrashTitle>XP 프로필 휴지통을 영구적으로 비울까요?</XPC_ProfileDialog_TrashTitle>
+  <XPC_ProfileDialog_TrashCount>휴지통에 있는 XP 프로필 {0}개가 영구 삭제됩니다.</XPC_ProfileDialog_TrashCount>
+  <XPC_ProfileDialog_TrashWarning>이 작업은 되돌릴 수 없습니다. XP Customizer 휴지통의 프로필만 삭제하며, 활성 프로필과 현재 XP 설정은 변경하지 않습니다.</XPC_ProfileDialog_TrashWarning>
+  <XPC_ProfileDialog_TrashRecheck>파일을 삭제하기 전에 전체 목록을 다시 검증합니다.</XPC_ProfileDialog_TrashRecheck>
+  <XPC_ProfileDialog_TrashButton>영구 삭제</XPC_ProfileDialog_TrashButton>
+  <XPC_ProfileDialog_ReviewTitle>프로필 적용</XPC_ProfileDialog_ReviewTitle>
+  <XPC_ProfileDialog_ReviewSavedGame>저장 시각: {0}  |  게임 버전: {1}</XPC_ProfileDialog_ReviewSavedGame>
+  <XPC_ProfileDialog_ReviewDifferent>설정 비교: 현재 설정과 다릅니다.</XPC_ProfileDialog_ReviewDifferent>
+  <XPC_ProfileDialog_ReviewSame>설정 비교: 현재 설정과 동일합니다.</XPC_ProfileDialog_ReviewSame>
+  <XPC_ProfileDialog_ReviewReplace>현재 XP Customizer 설정을 이 프로필로 교체할까요?</XPC_ProfileDialog_ReviewReplace>
+  <XPC_ProfileDialog_ReviewAlready>이미 적용된 설정과 동일하여 변경할 내용이 없습니다.</XPC_ProfileDialog_ReviewAlready>
+  <XPC_ProfileDialog_ReviewBackup>저장된 프로필 JSON은 변경하지 않습니다. 적용 전 게임을 일시정지하세요.
+현재 XP 설정 XML의 별도 백업이 유지됩니다.</XPC_ProfileDialog_ReviewBackup>
+  <XPC_ProfileDialog_ReviewNoJsonChange>프로필을 적용해도 저장된 프로필 JSON은 변경하지 않습니다.</XPC_ProfileDialog_ReviewNoJsonChange>
+  <XPC_ProfileDialog_ReviewApplyButton>프로필 적용</XPC_ProfileDialog_ReviewApplyButton>
+  <XPC_ProfileDialog_ReviewAlreadyButton>이미 적용됨</XPC_ProfileDialog_ReviewAlreadyButton>
+  <XPC_ProfileDialog_ReviewSuccess>프로필 적용 완료.</XPC_ProfileDialog_ReviewSuccess>
+  <XPC_ProfileDialog_ReviewFailure>프로필 적용 미완료: {0} (진단 사유: {1})</XPC_ProfileDialog_ReviewFailure>
+  <XPC_ProfileDialog_ApplyPrepared>준비됨, 아직 적용 전</XPC_ProfileDialog_ApplyPrepared>
+  <XPC_ProfileDialog_ApplyNoChange>변경 사항 없음</XPC_ProfileDialog_ApplyNoChange>
+  <XPC_ProfileDialog_ApplyRejected>안전 검사에서 적용을 거부함</XPC_ProfileDialog_ApplyRejected>
+  <XPC_ProfileDialog_ApplyConflict>프로필 또는 현재 설정이 변경됨</XPC_ProfileDialog_ApplyConflict>
+  <XPC_ProfileDialog_ApplyRecoveredNoWrite>런타임 복구됨, XML은 저장하지 않음</XPC_ProfileDialog_ApplyRecoveredNoWrite>
+  <XPC_ProfileDialog_ApplyRecoveryRequired>런타임 복구 확인 필요</XPC_ProfileDialog_ApplyRecoveryRequired>
+  <XPC_ProfileDialog_ApplyPersistenceUncertain>XML 저장 확인 불가, 백업 점검 필요</XPC_ProfileDialog_ApplyPersistenceUncertain>
+  <XPC_ProfileDialog_CreateRecoveryLock>복구 확인이 필요합니다. 재시작과 백업 확인 전까지 프로필 저장이 차단됩니다.</XPC_ProfileDialog_CreateRecoveryLock>
+  <XPC_ProfileDialog_CreateInvalidInput>올바른 이름을 입력하세요 (1~80자).</XPC_ProfileDialog_CreateInvalidInput>
+  <XPC_ProfileDialog_CreateNull>저장 실패: 성공 결과를 확인할 수 없습니다.</XPC_ProfileDialog_CreateNull>
+  <XPC_ProfileDialog_CreateSuccess>프로필을 생성했습니다.</XPC_ProfileDialog_CreateSuccess>
+  <XPC_ProfileDialog_CreateInvalidName>프로필 이름이 올바르지 않습니다.</XPC_ProfileDialog_CreateInvalidName>
+  <XPC_ProfileDialog_CreateInvalidSettings>현재 설정이 올바르지 않아 저장하지 않았습니다.</XPC_ProfileDialog_CreateInvalidSettings>
+  <XPC_ProfileDialog_CreateInvalidProfile>프로필 검증 실패로 저장하지 않았습니다.</XPC_ProfileDialog_CreateInvalidProfile>
+  <XPC_ProfileDialog_CreateStorageFailure>프로필 저장 실패: {0}.</XPC_ProfileDialog_CreateStorageFailure>
+  <XPC_ProfileDialog_NotesTitle>프로필 메모 편집</XPC_ProfileDialog_NotesTitle>
+  <XPC_ProfileDialog_NotesLabel>메모</XPC_ProfileDialog_NotesLabel>
+  <XPC_ProfileDialog_NotesCount>{0}/{1}자</XPC_ProfileDialog_NotesCount>
+  <XPC_ProfileDialog_NotesSave>메모 저장</XPC_ProfileDialog_NotesSave>
+  <XPC_ProfileDialog_NotesConflict>프로필이 변경됐습니다. 새로고침 후 다시 열어주세요.</XPC_ProfileDialog_NotesConflict>
+  <XPC_ProfileDialog_NotesFailure>메모를 저장하지 못했습니다: {0}.</XPC_ProfileDialog_NotesFailure>
+  <XPC_ProfileDialog_ReviewPauseNeeded>프로필을 적용하려면 게임을 일시정지하세요.</XPC_ProfileDialog_ReviewPauseNeeded>
+  <!-- PNL1: UI-only localized descriptions for exact bundled v2 profile notes. -->
+  <!-- XPC-PNL1-HF1-KO-NOTES-TEXT-R1-20261115: Korean official preset notes only; JSON, C#, English untouched -->
+  <XPC_PresetNotes_OfficialLong>바닐라 대비 차이점:
+- 총 필요 경험치 ×3
+- 의식이 학습속도, 일일 학습 한도, 포화 후 학습에 영향을 줍니다.
+- 전역 작업 속도가 학습속도에 영향을 줍니다.
+- 정신이상 임계치가 포화 후 학습에 영향을 줍니다.
+- 바이오텍 적성: 끔찍한 −8 / 나쁜 −4 / 좋은 +2 / 뛰어난 +4</XPC_PresetNotes_OfficialLong>
+  <XPC_PresetNotes_OfficialVeryLong>바닐라 대비 차이점:
+- 총 필요 경험치 ×6
+- 의식이 학습속도, 일일 학습 한도, 포화 후 학습에 영향을 줍니다.
+- 전역 작업 속도가 학습속도에 영향을 줍니다.
+- 정신이상 임계치가 포화 후 학습에 영향을 줍니다.
+- 바이오텍 적성: 끔찍한 −8 / 나쁜 −4 / 좋은 +1 / 뛰어난 +2</XPC_PresetNotes_OfficialVeryLong>
+</LanguageData>

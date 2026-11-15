@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L2_CreateTitle>Save Current Settings as New Profile</XPC_L2_CreateTitle>
+  <XPC_L2_CreateSeparateJson>Creates a separate JSON file. Existing profiles are never overwritten.</XPC_L2_CreateSeparateJson>
+  <XPC_L2_CreateCommittedOnly>Only committed numeric settings are saved. Finish editing before saving.</XPC_L2_CreateCommittedOnly>
+  <XPC_L2_CreateNameLabel>Profile name (1-80 characters)</XPC_L2_CreateNameLabel>
+  <XPC_L2_CreateNameHint>Enter a nonblank name; no control characters.</XPC_L2_CreateNameHint>
+  <XPC_L2_CreateCancel>Cancel</XPC_L2_CreateCancel>
+  <XPC_L2_CreateSaveNew>Save New</XPC_L2_CreateSaveNew>
+</LanguageData>

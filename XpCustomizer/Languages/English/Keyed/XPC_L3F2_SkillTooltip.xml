@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3F2_Tooltip_DailyCap>Daily learning cap</XPC_L3F2_Tooltip_DailyCap>
+  <XPC_L3F2_Tooltip_BaseCapacity>Base capacity</XPC_L3F2_Tooltip_BaseCapacity>
+  <XPC_L3F2_Tooltip_CapacityFloor>Minimum capacity floor applied</XPC_L3F2_Tooltip_CapacityFloor>
+  <XPC_L3F2_Tooltip_Further>Further learning</XPC_L3F2_Tooltip_Further>
+  <XPC_L3F2_Tooltip_BaseValue>Base value</XPC_L3F2_Tooltip_BaseValue>
+  <XPC_L3F2_Tooltip_Willpower>Willpower</XPC_L3F2_Tooltip_Willpower>
+  <XPC_L3F2_Tooltip_FurtherFloor>Minimum floor applied</XPC_L3F2_Tooltip_FurtherFloor>
+  <XPC_L3F2_Tooltip_GwsSpeed>GW speed</XPC_L3F2_Tooltip_GwsSpeed>
+  <XPC_L3F2_Tooltip_Cons>Cons</XPC_L3F2_Tooltip_Cons>
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3B2_EditBoundaries>단계 경계 편집</XPC_L3B2_EditBoundaries>
+  <XPC_L3B2_CloseEditor>경계 편집 닫기</XPC_L3B2_CloseEditor>
+  <XPC_L3B2_ResetWeights>단계 가중치 초기화</XPC_L3B2_ResetWeights>
+  <XPC_L3B2_EditRangeHelp>분할 레벨은 1~19 사이에서 편집할 수 있습니다. 0레벨과 20레벨은 고정 경계입니다.</XPC_L3B2_EditRangeHelp>
+  <XPC_L3B2_ApplyResetNotice>단계 경계를 적용하면 모든 단계 가중치가 1.00배로 초기화됩니다.</XPC_L3B2_ApplyResetNotice>
+  <XPC_L3B2_DeduplicateNotice>중복 경계는 합쳐지며, 적용할 때 레벨 순서대로 정렬됩니다.</XPC_L3B2_DeduplicateNotice>
+  <XPC_L3B2_PendingBoundaries>적용 전 경계: {0}</XPC_L3B2_PendingBoundaries>
+  <XPC_L3B2_SplitAfterLevel>이 레벨 뒤에서 분할</XPC_L3B2_SplitAfterLevel>
+  <XPC_L3B2_Remove>삭제</XPC_L3B2_Remove>
+  <XPC_L3B2_AddSplit>+ 경계 추가</XPC_L3B2_AddSplit>
+  <XPC_L3B2_Recommended>추천 경계</XPC_L3B2_Recommended>
+  <XPC_L3B2_Apply>적용</XPC_L3B2_Apply>
+  <XPC_L3B2_Cancel>취소</XPC_L3B2_Cancel>
+</LanguageData>

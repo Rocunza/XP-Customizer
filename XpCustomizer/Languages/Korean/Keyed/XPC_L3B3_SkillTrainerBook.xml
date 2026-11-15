@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_L3B3_ModifiedSuffix> (수정: {0})</XPC_L3B3_ModifiedSuffix>
+  <XPC_L3B3_SkillXpTitle>스킬별 XP 배율</XPC_L3B3_SkillXpTitle>
+  <XPC_L3B3_SkillXpUse>스킬별 XP 배율 사용</XPC_L3B3_SkillXpUse>
+  <XPC_L3B3_SkillXpDesc>스킬별 총 XP = 전체 총 XP × 스킬 배율. 모든 스킬은 공통 단계 분배를 사용하며 1.00x는 기본값입니다. 기능을 꺼도 미리보기 수치는 표시됩니다.</XPC_L3B3_SkillXpDesc>
+  <XPC_L3B3_SkillXpRange>허용 범위: 0.01x – 100.00x  |  목록에 없는 모드 스킬은 1.00x가 적용됩니다.</XPC_L3B3_SkillXpRange>
+  <XPC_L3B3_HeaderSkill>스킬</XPC_L3B3_HeaderSkill>
+  <XPC_L3B3_HeaderMultiplier>배율</XPC_L3B3_HeaderMultiplier>
+  <XPC_L3B3_SkillXpFinal>최종 배율*</XPC_L3B3_SkillXpFinal>
+  <XPC_L3B3_SkillXpTotal>총 XP*</XPC_L3B3_SkillXpTotal>
+  <XPC_L3B3_SkillXpReset>모든 스킬 배율을 1.00x로 초기화</XPC_L3B3_SkillXpReset>
+  <XPC_L3B3_TrainerTitle>스킬 트레이너 효과</XPC_L3B3_TrainerTitle>
+  <XPC_L3B3_TrainerDesc>스킬 뉴로트레이너가 제공하는 기본 XP에 배율을 적용합니다. 열정과 그 밖의 바닐라 스킬 트레이너 동작은 변경하지 않습니다.</XPC_L3B3_TrainerDesc>
+  <XPC_L3B3_TrainerMultiplier>XP 배율</XPC_L3B3_TrainerMultiplier>
+  <XPC_L3B3_TrainerRange>허용 범위: 0.01x – 100.00x   |   바닐라: 1.00x</XPC_L3B3_TrainerRange>
+  <XPC_L3F3_TrainerRangeMuted>허용 범위: 0.01x – 100.00x   |</XPC_L3F3_TrainerRangeMuted>
+  <XPC_L3F3_TrainerRangeVanilla>바닐라: 1.00x</XPC_L3F3_TrainerRangeVanilla>
+  <XPC_L3B3_TrainerVanillaBase>바닐라 기본 XP: {0}</XPC_L3B3_TrainerVanillaBase>
+  <XPC_L3B3_TrainerCustomBase>커스텀 기본 XP: {0}</XPC_L3B3_TrainerCustomBase>
+  <XPC_L3B3_TrainerSkillTitle>스킬별 트레이너 XP 배율</XPC_L3B3_TrainerSkillTitle>
+  <XPC_L3B3_TrainerSkillUse>스킬별 트레이너 XP 배율 사용</XPC_L3B3_TrainerSkillUse>
+  <XPC_L3B3_TrainerSkillDesc>트레이너 XP = 아이템 XP × 전체 트레이너 배율 × 스킬별 트레이너 배율. 레벨업 필요 XP는 바꾸지 않습니다. 1.00x는 기본값이며 기능을 꺼도 설정값은 보존됩니다.</XPC_L3B3_TrainerSkillDesc>
+  <XPC_L3B3_TrainerSkillRange>허용 범위: 0.01x – 100.00x  |  미리보기는 바닐라 기본 XP 50,000을 기준으로 하며 열정은 제외합니다. 목록에 없는 스킬은 1.00x가 적용됩니다.</XPC_L3B3_TrainerSkillRange>
+  <XPC_L3B3_TrainerSkillPreview>미리보기 XP (열정 전)</XPC_L3B3_TrainerSkillPreview>
+  <XPC_L3B3_TrainerSkillReset>모든 트레이너 스킬 배율을 1.00x로 초기화</XPC_L3B3_TrainerSkillReset>
+  <XPC_L3B3_TrainerSkillOffPreview> (꺼짐 미리보기)</XPC_L3B3_TrainerSkillOffPreview>
+  <XPC_L3B3_BookTitle>책 XP</XPC_L3B3_BookTitle>
+  <XPC_L3B3_BookEnable>책 XP 사용자 지정 사용</XPC_L3B3_BookEnable>
+  <XPC_L3B3_BookOffNotice>꺼짐: 바닐라 독서 XP를 사용합니다. 저장된 책 XP 설정은 유지됩니다.</XPC_L3B3_BookOffNotice>
+  <XPC_L3B3_BookDesc>배율 또는 사용자 지정 시간당 XP를 직접 편집합니다. 책의 레벨 제한, 열정, 학습 속도, 일일 학습 포화도는 변경되지 않습니다.</XPC_L3B3_BookDesc>
+  <XPC_L3B3_BookIntTitle>독서 지적 XP</XPC_L3B3_BookIntTitle>
+  <XPC_L3B3_BookIntEnable>모든 책의 추가 지적 XP 사용자 지정</XPC_L3B3_BookIntEnable>
+  <XPC_L3B3_BookIntBase>바닐라 기본 입력: 시간당 250 XP (틱당 0.1 XP). 열정 및 학습 속도 적용 전 수치입니다.</XPC_L3B3_BookIntBase>
+  <XPC_L3B3_BookQualityTitle>교과서 품질별 XP 배율</XPC_L3B3_BookQualityTitle>
+  <XPC_L3B3_BookQualityEnable>교과서 품질별 스킬 XP 사용자 지정</XPC_L3B3_BookQualityEnable>
+  <XPC_L3B3_BookQualityDesc>바닐라 시간당 XP는 교육 대상 스킬 하나를 기준으로 합니다. 수정하는 값은 품질 배율(0~20x)뿐이며 이 기능을 꺼도 저장된 배율은 편집할 수 있습니다.</XPC_L3B3_BookQualityDesc>
+  <XPC_L3B3_BookQualityReset>모든 품질 배율을 1.00x로 초기화</XPC_L3B3_BookQualityReset>
+  <XPC_L3B3_BookSkillTitle>교과서 스킬별 XP 배율 (12개 스킬)</XPC_L3B3_BookSkillTitle>
+  <XPC_L3B3_BookOnTag> [켜짐]</XPC_L3B3_BookOnTag>
+  <XPC_L3B3_BookOffTag> [꺼짐]</XPC_L3B3_BookOffTag>
+  <XPC_L3B3_BookSkillEnable>바닐라 스킬 12종의 XP 사용자 지정</XPC_L3B3_BookSkillEnable>
+  <XPC_L3B3_BookSkillDesc>바닐라 시간당 250 XP는 보통 품질의 책에서 스킬 하나를 가르칠 때의 값입니다. 이 표에서는 스킬별 배율만 수정하며 품질 배율은 게임에서 별도로 적용됩니다. 독서 속도, 방 보너스, LearnRateFactor도 적용됩니다. 스킬 2개를 가르치는 책은 스킬당 62.5%를 제공합니다.</XPC_L3B3_BookSkillDesc>
+  <XPC_L3B3_BookSkillReset>책 스킬별 배율을 모두 1.00x로 초기화</XPC_L3B3_BookSkillReset>
+  <XPC_L3B3_BookAllReset>책 XP 전체를 바닐라로 복원 (3개 영역)</XPC_L3B3_BookAllReset>
+  <XPC_L3B3_BookHeaderQuality>품질</XPC_L3B3_BookHeaderQuality>
+  <XPC_L3B3_BookHeaderSource>출처</XPC_L3B3_BookHeaderSource>
+  <XPC_L3B3_BookHeaderVanilla>바닐라 XP/시간</XPC_L3B3_BookHeaderVanilla>
+  <XPC_L3B3_BookHeaderRatio>배율 (x)</XPC_L3B3_BookHeaderRatio>
+  <XPC_L3B3_BookHeaderCustom>커스텀 XP/시간</XPC_L3B3_BookHeaderCustom>
+  <XPC_L3B3_BookIntLabel>지적</XPC_L3B3_BookIntLabel>
+  <XPC_L3B3_Quality_Awful>끔찍함</XPC_L3B3_Quality_Awful>
+  <XPC_L3B3_Quality_Poor>조잡함</XPC_L3B3_Quality_Poor>
+  <XPC_L3B3_Quality_Normal>보통</XPC_L3B3_Quality_Normal>
+  <XPC_L3B3_Quality_Good>좋음</XPC_L3B3_Quality_Good>
+  <XPC_L3B3_Quality_Excellent>뛰어남</XPC_L3B3_Quality_Excellent>
+  <XPC_L3B3_Quality_Masterwork>걸작</XPC_L3B3_Quality_Masterwork>
+  <XPC_L3B3_Quality_Legendary>전설적</XPC_L3B3_Quality_Legendary>
+</LanguageData>

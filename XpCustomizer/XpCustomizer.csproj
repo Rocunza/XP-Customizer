@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD2A72E3-BD5C-4672-A978-BEC322B50CFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XpCustomizer</RootNamespace>
+    <AssemblyName>XpCustomizer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Defaults for a standard Steam installation; override with Local.BuildPaths.props. -->
+  <PropertyGroup>
+    <RimWorld16GameDir Condition="'$(RimWorld16GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorld16GameDir>
+    <Harmony16DllPath Condition="'$(Harmony16DllPath)' == ''">C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</Harmony16DllPath>
+  </PropertyGroup>
+  <!-- Share the main solution's machine-local 1.6 paths; project-specific overrides still take precedence. -->
+  <Import Project="$(MSBuildProjectDirectory)\..\RimWorld.local.props" Condition="Exists('$(MSBuildProjectDirectory)\..\RimWorld.local.props')" />
+  <PropertyGroup>
+    <RimWorld16GameDir Condition="'$(RimWorldDir)' != ''">$(RimWorldDir)</RimWorld16GameDir>
+    <Harmony16DllPath Condition="'$(HarmonyDllPath)' != ''">$(HarmonyDllPath)</Harmony16DllPath>
+  </PropertyGroup>
+  <Import Project="Local.BuildPaths.props" Condition="Exists('Local.BuildPaths.props')" />
+  <Target Name="CheckXpCustomizerReferences" BeforeTargets="ResolveReferences" Condition="'$(DesignTimeBuild)' != 'true'">
+    <Error Condition="!Exists('$(RimWorld16GameDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll')" Text="RimWorld 1.6 Assembly-CSharp.dll missing. Set RimWorld16GameDir in Local.BuildPaths.props." />
+    <Error Condition="!Exists('$(Harmony16DllPath)')" Text="Harmony 1.6 0Harmony.dll missing. Set Harmony16DllPath in Local.BuildPaths.props." />
+  </Target>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(Harmony16DllPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorld16GameDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorld16GameDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(RimWorld16GameDir)\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(RimWorld16GameDir)\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Defaults\LegacyCurveXmlDefaults.cs" />
+    <Compile Include="Gws\GwsLearningService.cs" />
+    <Compile Include="Gws\Patch_GwsLearning.cs" />
+    <Compile Include="UI\GwsSettingsUI.cs" />
+    <Compile Include="UI\Shared\Layout\NumericRowLayout.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\NumericRowLayoutSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\GwsSelfTests.cs" />
+    <Compile Include="BookXp\BookXpService.cs" />
+    <Compile Include="BookXp\Patch_BookXp.cs" />
+    <Compile Include="UI\Progression\BookXpSettingsUI.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\BookXpSelfTests.cs" />
+    <Compile Include="Biotech\BiotechGeneService.cs" />
+    <Compile Include="Biotech\BiotechGeneService.Recovery.cs" />
+    <Compile Include="Biotech\BiotechGeneService.LiveAudit.cs" />
+    <Compile Include="Compatibility\CompatibilityAuditModels.cs" />
+    <Compile Include="Compatibility\HarmonyPatchDiscovery.cs" />
+    <Compile Include="Compatibility\HarmonyModIdentityResolver.cs" />
+    <Compile Include="Compatibility\CompatibilityFeatureCatalog.cs" />
+    <Compile Include="Compatibility\CompatibilityAuditCoordinator.cs" />
+    <Compile Include="Compatibility\CompatibilityAuditReporter.cs" />
+    <Compile Include="Development\SelfTests\Infrastructure\CompatibilityAuditSelfTests.cs" />
+    <Compile Include="Decay\SkillDecayService.cs" />
+    <Compile Include="Decay\DecayModifiersService.cs" />
+    <Compile Include="Decay\DecayOverridePolicy.cs" />
+    <Compile Include="Decay\DecayLiveDiagnostics.cs" />
+    <Compile Include="UI\Decay\DecayModifiersSettingsUI.cs" />
+    <Compile Include="Decay\Patch_SkillRecord_Interval.cs" />
+    <Compile Include="UI\Decay\DecaySettingsUI.cs" />
+    <Compile Include="Core\Xml\OwnedXmlScanner.cs" />
+    <Compile Include="Core\Xml\OwnedXmlSemanticContract.cs" />
+    <Compile Include="Profiles\Persistence\ProfileOwnedXmlEvidence.cs" />
+    <Compile Include="Profiles\Persistence\ProfileProductionWriteGate.cs" />
+    <Compile Include="Profiles\Operations\ProfileCurrentOverwriteService.cs" />
+    <Compile Include="Profiles\Apply\ProfileProductionApplyService.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_OverwriteXpProfile.cs" />
+    <Compile Include="UI\Dialogs\Reset\Dialog_ConfirmGlobalVanillaReset.cs" />
+    <Compile Include="UI\Dialogs\Reset\Dialog_ConfirmGlobalModNumericReset.cs" />
+    <Compile Include="Core\Defaults\XpCustomizerDefaults.cs" />
+    <Compile Include="SkillTooltip\TooltipSourceRatioFormatter.cs" />
+        <Compile Include="Core\Settings\Presets\SettingsPresetService.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Progression.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Learning.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Consciousness.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Gws.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Decay.cs" />
+    <Compile Include="Core\Settings\Presets\SettingsPresetService.Biotech.cs" />
+    <Compile Include="Core\Defaults\GlobalNumericDefaultsService.cs" />
+    <Compile Include="Core\Settings\SettingsSnapshot.cs" />
+    <Compile Include="Core\Settings\SettingsSnapshotService.cs" />
+    <Compile Include="Core\Settings\SettingsCandidateValidator.cs" />
+    <Compile Include="Core\Settings\SettingsApplyCoordinator.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeApplyCoordinator.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeApplyCoordinator.Live.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeApplyCoordinator.Debug.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeTransactionEngine.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeChangeDetector.cs" />
+    <Compile Include="Profiles\Persistence\ProfileApplyPersistenceContract.cs" />
+    <Compile Include="Profiles\Persistence\ProfileXmlPersistenceEvidencePolicy.cs" />
+    <Compile Include="Core\RuntimeApply\SettingsRuntimeRecovery.cs" />
+    <Compile Include="Core\RuntimeApply\RuntimeRecoverySessionGate.cs" />
+    <Compile Include="Profiles\Debug\ProfileDebugLiveApplySessionGuard.cs" />
+    <Compile Include="Profiles\Persistence\ProfileDebugPersistWriteGate.cs" />
+    <Compile Include="Profiles\Contracts\ProfileDocument.cs" />
+    <Compile Include="Profiles\Contracts\ProfileFormatV2.cs" />
+    <Compile Include="Profiles\Contracts\ProfileSchemaV1.cs" />
+    <Compile Include="Profiles\Contracts\ProfileMapper.cs" />
+    <Compile Include="Profiles\Contracts\ProfileApplySettingsComparison.cs" />
+    <Compile Include="Profiles\Storage\ProfileJsonCodec.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Persistence\ProfileSchemaSelfTests.cs" />
+    <Compile Include="Profiles\Storage\ProfileStorageResult.cs" />
+    <Compile Include="Profiles\Storage\ProfileStoragePaths.cs" />
+    <Compile Include="Profiles\Storage\ProfileFileRepository.cs" />
+    <Compile Include="Profiles\Editor\ProfileEditorReadinessService.cs" />
+    <Compile Include="Profiles\Editor\ProfileEditorReadinessService.OwnerAudit.cs" />
+    <Compile Include="Profiles\Operations\ProfileOverwritePreflightService.cs" />
+    <Compile Include="Profiles\Apply\ProfileApplyPreflightService.cs" />
+    <Compile Include="Profiles\Apply\ProfileApplyReviewSession.cs" />
+    <Compile Include="Profiles\Apply\ProfileApplyReviewModels.cs" />
+    <Compile Include="Profiles\Apply\ProfileApplyGateService.cs" />
+    <Compile Include="Profiles\Apply\ProfileApplyBridgeService.cs" />
+    <Compile Include="Profiles\Debug\ProfileDebugLiveApplyService.cs" />
+    <Compile Include="Profiles\Debug\ProfileDebugPersistenceService.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_ReviewXpProfileApply.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Apply\ProfileApplyPreflightSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Apply\ProfileApplyGateSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Apply\ProfileApplyBridgeSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Apply\ProfileDebugLiveApplySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Persistence\ProfileDebugPersistWriteGateSelfTests.cs" />
+    <Compile Include="Profiles\Operations\ProfileCreationService.cs" />
+    <Compile Include="Profiles\Storage\ProfileNamePolicy.cs" />
+    <Compile Include="Profiles\Storage\ProfileWriteSessionGate.cs" />
+    <Compile Include="Profiles\Operations\ProfileTrashActionService.cs" />
+    <Compile Include="Profiles\Storage\ProfileTrashPurgeModels.cs" />
+    <Compile Include="Profiles\Storage\ProfileFileRepository.TrashPurge.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_EmptyXpProfileTrash.cs" />
+    <Compile Include="UI\ProfileManager\ProfileTrashPurgeUiController.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_DeleteXpProfile.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_DiscardCareerNumericDraft.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_DiscardSkilltrainerNumericDraft.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerTotalMultiplierRecovery.cs" />
+    <Compile Include="UI\Progression\SkilltrainerNumericRecoveryTicket.cs" />
+    <Compile Include="Profiles\Operations\ProfileUpdateService.cs" />
+    <Compile Include="Profiles\Operations\ProfileNotesService.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_RenameXpProfile.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_EditXpProfileNotes.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileEditorReadinessSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileNumericNavigationN1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\CareerNumericRecoveryR1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\NumericRecoveryR2S1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\SkilltrainerNumericRecoveryS2SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\ToggleAlignmentU1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\SettingsUIHelpersSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\SettingsUIHelpersSafetySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\GlobalVanillaResetR1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\GlobalNumericDefaultsR3ASelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\GlobalNumericResetR3BSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\LinearCurveDefaultsL1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\LegacyPresetRetirementH1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DiagnosticLogSemanticsQ1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileUiPolishP1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileOverwritePreflightSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Apply\ProfileProductionF2SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileRenameSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileNotesSelfTests.cs" />
+    <Compile Include="UI\Dialogs\Profile\Dialog_CreateXpProfile.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileCreationSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Persistence\ProfileStorageSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\BundledProfileBP12SelfTests.cs" />
+    <Compile Include="Profiles\Bundled\BundledProfileInstaller.cs" />
+    <Compile Include="Profiles\Bundled\BundledProfileNotesLocalization.cs" />
+    <Compile Include="Profiles\Bundled\BundledProfileStateStore.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\BundledProfileBP4SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileTrashPurgeSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileManagementUiSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileManagerWindowSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\ProfileManagerSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Management\QuickProfileMenuSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Infrastructure\XpCustomizerSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsSplitR1SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\SettingsWindowSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\SkillTooltip\SkillTooltipSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\SkillTooltip\SkillTooltipServiceSplitSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CADiagnosticRunner.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CBDetachedDiagnostics.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CBSelection.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CBMultiPawnDiagnostics.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CRandomizedDiagnostics.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCLiveXpCapture.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCReadingCoverage.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCBookMetadataReader.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCLiveXpReporting.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCJointVerdict.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCSkillSummary.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCWorkSourceProof.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCWorkSourceTrace.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCWorkSourceAuthorization.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCBillMathPreview.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCBillOfficialAdmission.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCLiveXpFormula.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCIndependentRateOracle.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCIndependentFurtherOracle.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCJobSourceCoverage.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCWorkTargetProvenance.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCPostCapSampling.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCIndependentDailyCapOracle.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CCReadinessScanner.cs" />
+    <Compile Include="Development\Diagnostics\Phase4C\Phase4CRegressionLedger.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\DecaySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\DecayPolicySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsPersistenceSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsSnapshotSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsApplySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Infrastructure\HarmonyPatchAudit.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\SkilltrainerSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Consciousness\ConsciousnessAnchorCurveSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Consciousness\ConsciousnessPhase4BR2SelfTests.cs" />
+    <Compile Include="Development\SelfTests\Learning\FurtherLearningSelfTests.cs" />
+    <Compile Include="Development\Probes\LiveSkillProbe.cs" />
+    <Compile Include="Development\Probes\LiveSkillProbe_Skilltrainer.cs" />
+    <Compile Include="Development\Probes\LiveSkillProbe_Tooltip.cs" />
+    <Compile Include="Development\Probes\LiveSkillProbe_DetachedLearn.cs" />
+    <Compile Include="Development\SelfTests\Career\CareerXpSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Career\CareerXpDistributionSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Career\CareerProgressionSettingsUISplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Career\CareerStageBoundaryEditorSplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Learning\LearningCapacitySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Learning\LearningCapacitySplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Learning\LearningCapacitySettingsUISplitSelfTests.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistribution.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistributionService.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistributionService.ShareLocks.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistributionService.Build.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistributionService.Rounding.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpDistributionService.Stages.cs" />
+    <Compile Include="Progression\Patch_SkillRecord_XpRequiredToLevelUpFrom.cs" />
+    <Compile Include="Progression\CareerXp\CareerXpAllocator.cs" />
+    <Compile Include="Progression\XpCurve.cs" />
+    <Compile Include="Progression\SkillSpecificXpService.cs" />
+    <Compile Include="Progression\Patch_SkillRecord_SkillSpecificXp.cs" />
+    <Compile Include="UI\Progression\SkillSpecificXpSettingsUI.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\SkillSpecificXpSelfTests.cs" />
+    <Compile Include="XpCustomizerMod.cs" />
+    <Compile Include="XpCustomizerMod.Startup.cs" />
+    <Compile Include="XpCustomizerMod.Persistence.cs" />
+    <Compile Include="XpCustomizerSettings.cs" />
+    <Compile Include="XpCustomizerSettings.Persistence.Progression.cs" />
+    <Compile Include="XpCustomizerSettings.Persistence.Features.cs" />
+    <Compile Include="XpCustomizerSettings.Persistence.Learning.cs" />
+    <Compile Include="XpCustomizerSettings.Migration.LearningCapacity.cs" />
+    <Compile Include="XpCustomizerSettings.Migration.Other.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessCurveDispatcher.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessAnchorCurveService.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessAnchorV2SettingsStore.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessCapacityService.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessFurtherLearningService.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessFurtherV2SettingsStore.cs" />
+    <Compile Include="ConsciousnessLearning\ConsciousnessLearningService.cs" />
+    <Compile Include="ConsciousnessLearning\Patch_SkillRecord_LearnRateFactor_Consciousness.cs" />
+    <Compile Include="FurtherLearning\FurtherLearningBreakdown.cs" />
+    <Compile Include="FurtherLearning\FurtherLearningService.cs" />
+    <Compile Include="FurtherLearning\Patch_SkillRecord_LearnRateFactor.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityBreakdown.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityContribution.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityService.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityActivationPolicy.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityCalculator.cs" />
+    <Compile Include="LearningCapacity\LearningCapacitySourceEvaluator.cs" />
+    <Compile Include="LearningCapacity\LearningCapacitySourceAccumulator.cs" />
+    <Compile Include="LearningCapacity\LearningCapacitySourceDetector.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityBreakdownBuilder.cs" />
+    <Compile Include="LearningCapacity\LearningCapacityNormalization.cs" />
+    <Compile Include="LearningCapacity\LearningCapacitySourceDefs.cs" />
+    <Compile Include="LearningCapacity\Patch_SkillRecord_LearningSaturatedToday.cs" />
+    <Compile Include="LearningCapacity\Patch_SkillUI_GetSkillDescription.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.Gws.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.Consciousness.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.DailyCapacity.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.FurtherLearning.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipService.Formatting.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipLocalizedPresentation.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipComposer.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipTextEditor.cs" />
+    <Compile Include="SkillTooltip\SkillTooltipPresentationValues.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skilltrainer\Patch_CompUseEffect_LearnSkill.cs" />
+    <Compile Include="Skilltrainer\SkilltrainerSpecificXpService.cs" />
+    <Compile Include="UI\Progression\SkilltrainerSpecificXpSettingsUI.cs" />
+    <Compile Include="UI\BiotechSettingsUI.cs" />
+    <Compile Include="Development\SelfTests\Gameplay\BiotechUiSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\UI\SettingsRefreshSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsRuntimeApplySelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsRuntimeApplySplitSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsRuntimeRecoverySelfTests.cs" />
+    <Compile Include="Development\Probes\SettingsLiveRecoveryProbe.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\RuntimeRecoverySessionGateSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Settings\State\SettingsPersistenceGuardSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Persistence\ProfileApplyPersistenceContractSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Profiles\Persistence\ProfileXmlPersistenceEvidenceSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\ModXmlRoundTripAudit.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\ModXmlRoundTripSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedXmlStageAudit.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedXmlStageSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedXmlSemanticContract.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedXmlSemanticSelfTests.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\OwnedXmlEvidenceSplitSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedVerseLoadAudit.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedVerseLoadSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedLogQueueObserver.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedLogQueueSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedNonDefaultVector.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedNonDefaultVectorSelfTests.cs" />
+    <Compile Include="Development\Diagnostics\Detached\DetachedTempFileTransactionAudit.cs" />
+    <Compile Include="Development\SelfTests\Diagnostics\DetachedTempFileTransactionSelfTests.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerProgressionSettingsUI.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerProgressionSettingsUI.Distribution.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerProgressionSettingsUI.StageTable.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerProgressionSettingsUI.Rounding.cs" />
+    <Compile Include="UI\Progression\CareerProgression\CareerProgressionSettingsUI.State.cs" />
+    <Compile Include="UI\Progression\CareerProgression\StageBoundaries\CareerXpStageBoundaryEditorUI.cs" />
+<Compile Include="UI\Progression\CareerProgression\StageBoundaries\CareerXpStageBoundaryEditorUI.Rows.cs" />
+<Compile Include="UI\Progression\CareerProgression\StageBoundaries\CareerXpStageBoundaryEditorUI.Actions.cs" />
+<Compile Include="UI\Progression\CareerProgression\StageBoundaries\CareerStageBoundaryDraft.cs" />
+<Compile Include="UI\Progression\CareerProgression\StageBoundaries\CareerStageBoundarySettingsCommands.cs" />
+    <Compile Include="UI\Learning\LearningSettingsUI.cs" />
+        <Compile Include="UI\Learning\ConsciousnessFurtherLearningSettingsUI.cs" />
+    <Compile Include="UI\Learning\ConsciousnessFurtherLearningSettingsUI.NumericInput.cs" />
+    <Compile Include="UI\Learning\ConsciousnessFurtherLearningSettingsUI.Preview.cs" />
+    <Compile Include="UI\Learning\ConsciousnessAnchorV2SettingsUI.cs" />
+    <Compile Include="UI\Learning\ConsciousnessAnchorV2SettingsUI.NumericInput.cs" />
+    <Compile Include="UI\Learning\ConsciousnessAnchorV2SettingsUI.Preview.cs" />
+    <Compile Include="UI\Learning\ConsciousnessPreviewGridLayout.cs" />
+    <Compile Include="UI\Learning\ConsciousnessSettingsUI.cs" />
+    <Compile Include="UI\Learning\FurtherLearningSettingsUI.cs" />
+    <Compile Include="UI\Learning\Capacity\LearningCapacitySettingsUI.cs" />
+    <Compile Include="UI\Learning\Capacity\LearningCapacitySettingsUI.Base.cs" />
+    <Compile Include="UI\Learning\Capacity\LearningCapacitySettingsUI.Sources.cs" />
+    <Compile Include="UI\Learning\Capacity\LearningCapacitySettingsUI.SourceRows.cs" />
+    <Compile Include="UI\Learning\Capacity\LearningCapacitySettingsUI.State.cs" />
+    <Compile Include="UI\Progression\Level20ReserveSettingsUI.cs" />
+    <Compile Include="UI\Shared\Input\NumericInputState.cs" />
+    <Compile Include="UI\Shared\Input\ProfileNumericFocus.cs" />
+    <Compile Include="UI\Shared\Input\ProfileNumericNavigation.cs" />
+    <Compile Include="UI\Shared\Input\NumericDraftRecoveryPolicy.cs" />
+    <Compile Include="UI\Shared\Input\NumericDraftRecoveryRegistry.cs" />
+    <Compile Include="UI\Progression\ProgressionSettingsUI.cs" />
+    <Compile Include="UI\ProfileManager\QuickProfileMenuController.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementUiState.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.Chrome.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.List.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.Detail.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.Actions.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagementSettingsUI.Preview.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagerLayout.cs" />
+    <Compile Include="UI\ProfileManager\ProfileManagerWindow.cs" />
+    <Compile Include="UI\Settings\SettingsTab.cs" />
+    <Compile Include="UI\Shared\VanillaReferenceAccentUI.cs" />
+    <Compile Include="UI\Shared\SettingsUIHelpers.cs" />
+<Compile Include="UI\Shared\SettingsUIHelpers.Toggles.cs" />
+<Compile Include="UI\Shared\SettingsUIHelpers.ConsciousnessExamples.cs" />
+<Compile Include="UI\Shared\SettingsUIHelpers.Numeric.cs" />
+    <Compile Include="UI\Settings\SettingsWindow.cs" />
+    <Compile Include="UI\Settings\SettingsProfileNavigationController.cs" />
+    <Compile Include="UI\Settings\SettingsProfileNavigationController.SkilltrainerRecovery.cs" />
+    <Compile Include="UI\Settings\SettingsNumericRecoveryController.cs" />
+    <Compile Include="UI\Settings\SettingsNumericRecoveryController.Skilltrainer.cs" />
+    <Compile Include="UI\Settings\SettingsResetController.cs" />
+    <Compile Include="UI\Settings\SettingsResetController.LegacyNumeric.cs" />
+    <Compile Include="UI\Settings\SettingsWindow.Debug.cs" />
+    <Compile Include="UI\Settings\SettingsRefreshCoordinator.cs" />
+    <Compile Include="UI\Progression\SkilltrainerSettingsUI.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

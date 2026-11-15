@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_L3B3_ModifiedSuffix> (modified: {0})</XPC_L3B3_ModifiedSuffix>
+  <XPC_L3B3_SkillXpTitle>Skill-specific XP multipliers</XPC_L3B3_SkillXpTitle>
+  <XPC_L3B3_SkillXpUse>Use skill-specific XP multipliers</XPC_L3B3_SkillXpUse>
+  <XPC_L3B3_SkillXpDesc>Per skill: Global total XP × Skill multiplier. All skills use the shared stage distribution; 1.00x is neutral. Preview is shown even while the switch is OFF.</XPC_L3B3_SkillXpDesc>
+  <XPC_L3B3_SkillXpRange>Allowed: 0.01x – 100.00x  |  Unlisted mod skills default to 1.00x.</XPC_L3B3_SkillXpRange>
+  <XPC_L3B3_HeaderSkill>Skill</XPC_L3B3_HeaderSkill>
+  <XPC_L3B3_HeaderMultiplier>Multiplier</XPC_L3B3_HeaderMultiplier>
+  <XPC_L3B3_SkillXpFinal>Final x*</XPC_L3B3_SkillXpFinal>
+  <XPC_L3B3_SkillXpTotal>Total XP*</XPC_L3B3_SkillXpTotal>
+  <XPC_L3B3_SkillXpReset>Reset all skill multipliers to 1.00x</XPC_L3B3_SkillXpReset>
+  <XPC_L3B3_TrainerTitle>Skilltrainer strength</XPC_L3B3_TrainerTitle>
+  <XPC_L3B3_TrainerDesc>Multiplies the base XP granted by skill neurotrainers. Passion and other vanilla skilltrainer behavior remain unchanged.</XPC_L3B3_TrainerDesc>
+  <XPC_L3B3_TrainerMultiplier>XP multiplier</XPC_L3B3_TrainerMultiplier>
+  <XPC_L3B3_TrainerRange>Allowed range: 0.01x – 100.00x   |   Vanilla: 1.00x</XPC_L3B3_TrainerRange>
+  <XPC_L3F3_TrainerRangeMuted>Allowed range: 0.01x – 100.00x   |</XPC_L3F3_TrainerRangeMuted>
+  <XPC_L3F3_TrainerRangeVanilla>Vanilla: 1.00x</XPC_L3F3_TrainerRangeVanilla>
+  <XPC_L3B3_TrainerVanillaBase>Vanilla base XP: {0}</XPC_L3B3_TrainerVanillaBase>
+  <XPC_L3B3_TrainerCustomBase>Custom base XP: {0}</XPC_L3B3_TrainerCustomBase>
+  <XPC_L3B3_TrainerSkillTitle>Skill-specific Skilltrainer multipliers</XPC_L3B3_TrainerSkillTitle>
+  <XPC_L3B3_TrainerSkillUse>Use skill-specific Skilltrainer multipliers</XPC_L3B3_TrainerSkillUse>
+  <XPC_L3B3_TrainerSkillDesc>Trainer payout = item's XP × global trainer multiplier × per-skill trainer multiplier. This does NOT change XP required for levels. 1.00x is neutral. Values are retained when disabled.</XPC_L3B3_TrainerSkillDesc>
+  <XPC_L3B3_TrainerSkillRange>Allowed: 0.01x – 100.00x  |  Preview uses vanilla 50,000 base XP and excludes passion. Unlisted skills default to 1.00x.</XPC_L3B3_TrainerSkillRange>
+  <XPC_L3B3_TrainerSkillPreview>Preview XP (before passion)</XPC_L3B3_TrainerSkillPreview>
+  <XPC_L3B3_TrainerSkillReset>Reset all Skilltrainer multipliers to 1.00x</XPC_L3B3_TrainerSkillReset>
+  <XPC_L3B3_TrainerSkillOffPreview> (OFF preview)</XPC_L3B3_TrainerSkillOffPreview>
+  <XPC_L3B3_BookTitle>Book XP</XPC_L3B3_BookTitle>
+  <XPC_L3B3_BookEnable>Enable Book XP customization</XPC_L3B3_BookEnable>
+  <XPC_L3B3_BookOffNotice>OFF: vanilla reading XP. Saved Book XP settings are retained.</XPC_L3B3_BookOffNotice>
+  <XPC_L3B3_BookDesc>Edit ratios or custom XP/hour directly. Book level caps, passion, learning rate and daily saturation remain unchanged.</XPC_L3B3_BookDesc>
+  <XPC_L3B3_BookIntTitle>Reading Intellectual XP</XPC_L3B3_BookIntTitle>
+  <XPC_L3B3_BookIntEnable>Customize passive Intellectual XP from all books</XPC_L3B3_BookIntEnable>
+  <XPC_L3B3_BookIntBase>Vanilla base input: 250 XP/hour (0.1 XP/tick). Before passion and learning rate.</XPC_L3B3_BookIntBase>
+  <XPC_L3B3_BookQualityTitle>Textbook quality XP multipliers</XPC_L3B3_BookQualityTitle>
+  <XPC_L3B3_BookQualityEnable>Customize quality-specific textbook skill XP</XPC_L3B3_BookQualityEnable>
+  <XPC_L3B3_BookQualityDesc>Vanilla XP/hour is per single taught skill. Edits affect only the quality ratio (0–20x); saved ratios remain editable while this section is OFF.</XPC_L3B3_BookQualityDesc>
+  <XPC_L3B3_BookQualityReset>Reset all quality ratios to 1.00x</XPC_L3B3_BookQualityReset>
+  <XPC_L3B3_BookSkillTitle>Skill-specific textbook XP multipliers (12 skills)</XPC_L3B3_BookSkillTitle>
+  <XPC_L3B3_BookOnTag> [ON]</XPC_L3B3_BookOnTag>
+  <XPC_L3B3_BookOffTag> [OFF]</XPC_L3B3_BookOffTag>
+  <XPC_L3B3_BookSkillEnable>Customize XP for each of the 12 vanilla skills</XPC_L3B3_BookSkillEnable>
+  <XPC_L3B3_BookSkillDesc>Vanilla 250 XP/hour = Normal quality, one taught skill. This table edits only the skill ratio; the quality ratio applies separately in game. Reading speed, room bonus and LearnRateFactor also apply. Two-skill books give 62.5% per skill.</XPC_L3B3_BookSkillDesc>
+  <XPC_L3B3_BookSkillReset>Reset all per-skill book ratios to 1.00x</XPC_L3B3_BookSkillReset>
+  <XPC_L3B3_BookAllReset>Restore Book XP to Vanilla (all three sections)</XPC_L3B3_BookAllReset>
+  <XPC_L3B3_BookHeaderQuality>Quality</XPC_L3B3_BookHeaderQuality>
+  <XPC_L3B3_BookHeaderSource>Source</XPC_L3B3_BookHeaderSource>
+  <XPC_L3B3_BookHeaderVanilla>Vanilla XP/h</XPC_L3B3_BookHeaderVanilla>
+  <XPC_L3B3_BookHeaderRatio>Ratio (x)</XPC_L3B3_BookHeaderRatio>
+  <XPC_L3B3_BookHeaderCustom>Custom XP/h</XPC_L3B3_BookHeaderCustom>
+  <XPC_L3B3_BookIntLabel>Intellectual</XPC_L3B3_BookIntLabel>
+  <XPC_L3B3_Quality_Awful>Awful</XPC_L3B3_Quality_Awful>
+  <XPC_L3B3_Quality_Poor>Poor</XPC_L3B3_Quality_Poor>
+  <XPC_L3B3_Quality_Normal>Normal</XPC_L3B3_Quality_Normal>
+  <XPC_L3B3_Quality_Good>Good</XPC_L3B3_Quality_Good>
+  <XPC_L3B3_Quality_Excellent>Excellent</XPC_L3B3_Quality_Excellent>
+  <XPC_L3B3_Quality_Masterwork>Masterwork</XPC_L3B3_Quality_Masterwork>
+  <XPC_L3B3_Quality_Legendary>Legendary</XPC_L3B3_Quality_Legendary>
+</LanguageData>

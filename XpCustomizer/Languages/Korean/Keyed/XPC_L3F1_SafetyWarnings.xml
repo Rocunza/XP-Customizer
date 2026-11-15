@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3F1_ResetTitle>모드 설치 기본값으로 초기화할까요?</XPC_L3F1_ResetTitle>
+  <XPC_L3F1_ResetWarning>XP Customizer의 모든 설정을 모드 설치 기본값으로 초기화하시겠습니까?</XPC_L3F1_ResetWarning>
+  <XPC_L3F1_ResetDetail>기존 프로필과 휴지통은 보존합니다. Long (x3)·Very Long (x6) 기본 프로필이 없으면 다시 생성하며, 모드 설정 XML은 설정창을 닫을 때 저장됩니다.</XPC_L3F1_ResetDetail>
+  <XPC_L3F1_Cancel>취소</XPC_L3F1_Cancel>
+  <XPC_L3F1_Confirm>네, 초기화</XPC_L3F1_Confirm>
+  <XPC_L3F1_ResetBlocked>초기화 차단: 설정 복구 또는 쓰기 잠금이 활성화되어 있습니다.</XPC_L3F1_ResetBlocked>
+  <XPC_L3F1_ResetFailed>초기화 실패. 저장하지 말고 게임을 종료한 뒤 로그를 확인하세요.</XPC_L3F1_ResetFailed>
+  <XPC_L3F1_RecoveryLock>XP Customizer: 런타임 복구를 확인할 수 없습니다.
+이번 실행에서는 설정 편집과 XML 저장이 차단됩니다.
+게임을 저장하지 말고 종료한 뒤 다시 실행하세요. 로그를 확인하세요.</XPC_L3F1_RecoveryLock>
+  <XPC_L3F1_BundledPartial>XP Customizer 설정은 초기화했지만, 기본 제공 프로필 중 일부를 복원하지 못했습니다. 로그를 확인하세요.</XPC_L3F1_BundledPartial>
+  <XPC_L3F1_NumericInvalid>XP Customizer: 프로필을 열기 전에 숫자 입력을 완료하거나 잘못된 값을 수정하세요.</XPC_L3F1_NumericInvalid>
+  <XPC_L3F1_NumericPending>XP Customizer: 프로필을 열기 전에 설정 탭의 숫자 편집을 완료하세요.</XPC_L3F1_NumericPending>
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_N1R2S2_RecoveryTitle>스킬트레이너 숫자 입력을 취소할까요?</XPC_N1R2S2_RecoveryTitle>
+  <XPC_N1R2S2_RecoveryBody>스킬트레이너 강도에 미완료 숫자 텍스트가 남아 있습니다. 이 텍스트만 버리고 현재 실제 적용 중인 배율을 다시 표시한 뒤 프로필을 열도록 재시도하시겠습니까? 입력 도중 이미 반영된 수치를 이전 값으로 되돌리지 않습니다. 스킬별 스킬트레이너 배율과 다른 설정은 유지됩니다.</XPC_N1R2S2_RecoveryBody>
+  <XPC_N1R2S2_RecoveryConfirm>편집 취소 후 계속</XPC_N1R2S2_RecoveryConfirm>
+  <XPC_N1R2S2_RecoveryCancel>편집 유지</XPC_N1R2S2_RecoveryCancel>
+  <XPC_N1R2S2_RecoveryStale>XP Customizer: 스킬트레이너 입력 또는 다른 편집 상태가 바뀌어 미완료 텍스트를 버리지 않았습니다.</XPC_N1R2S2_RecoveryStale>
+</LanguageData>

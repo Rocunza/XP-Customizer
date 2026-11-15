@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3F1_ResetTitle>Reset to Mod Defaults?</XPC_L3F1_ResetTitle>
+  <XPC_L3F1_ResetWarning>Reset ALL XP Customizer settings to their install defaults?</XPC_L3F1_ResetWarning>
+  <XPC_L3F1_ResetDetail>Existing profiles and Trash are preserved. Missing Long (x3) and Very Long (x6) profiles will be recreated; XML saves when the window closes.</XPC_L3F1_ResetDetail>
+  <XPC_L3F1_Cancel>Cancel</XPC_L3F1_Cancel>
+  <XPC_L3F1_Confirm>Yes, Reset</XPC_L3F1_Confirm>
+  <XPC_L3F1_ResetBlocked>Reset blocked: settings recovery or write lock is active.</XPC_L3F1_ResetBlocked>
+  <XPC_L3F1_ResetFailed>Reset failed. Exit without saving and inspect the log.</XPC_L3F1_ResetFailed>
+  <XPC_L3F1_RecoveryLock>XP Customizer: runtime recovery could not be verified.
+Settings editing and XML saving are disabled for this session.
+Exit the game without saving, then restart. See the log.</XPC_L3F1_RecoveryLock>
+  <XPC_L3F1_BundledPartial>XP Customizer settings reset, but one or more bundled profiles could not be restored. Check the log.</XPC_L3F1_BundledPartial>
+  <XPC_L3F1_NumericInvalid>XP Customizer: finish or correct the numeric value before opening profiles.</XPC_L3F1_NumericInvalid>
+  <XPC_L3F1_NumericPending>XP Customizer: finish numeric editing in the settings tab before opening profiles.</XPC_L3F1_NumericPending>
+</LanguageData>

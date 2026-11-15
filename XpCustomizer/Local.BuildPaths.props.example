@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <!-- Edit the paths, then save this file as Local.BuildPaths.props -->
+    <RimWorld16GameDir>C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorld16GameDir>
+    <Harmony16DllPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</Harmony16DllPath>
+  </PropertyGroup>
+</Project>

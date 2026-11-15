@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3_TabProgression>Custom XP</XPC_L3_TabProgression>
+  <XPC_L3_TabLearning>Learning</XPC_L3_TabLearning>
+  <XPC_L3_TabDecay>Decay</XPC_L3_TabDecay>
+  <XPC_L3_TabBiotech>Biotech</XPC_L3_TabBiotech>
+  <XPC_L3_TabCons>Cons</XPC_L3_TabCons>
+  <XPC_L3_TabGWS>GWS</XPC_L3_TabGWS>
+  <XPC_L3_TabInsp>Insp</XPC_L3_TabInsp>
+  <XPC_L3_TabCombat>Combat</XPC_L3_TabCombat>
+  <XPC_L3_QuickProfilesFull>Quick Profiles ▼</XPC_L3_QuickProfilesFull>
+  <XPC_L3_QuickProfilesShort>Quick ▼</XPC_L3_QuickProfilesShort>
+  <XPC_L3_QuickProfilesTip>Browse saved profiles. The menu contains profile choices only; selection opens a verified review window. Applying a selected profile requires a separate explicit confirmation; opening this menu never applies settings.</XPC_L3_QuickProfilesTip>
+  <XPC_L3_ManageProfilesTip>Open Profile Manager to save, inspect, rename, update, delete and restore profiles. Browsing does not change current XP settings; applying requires separate confirmation.</XPC_L3_ManageProfilesTip>
+  <XPC_L3_ManageProfilesFull>Manage Profiles</XPC_L3_ManageProfilesFull>
+  <XPC_L3_ManageProfilesMedium>Profiles...</XPC_L3_ManageProfilesMedium>
+  <XPC_L3_ManageProfilesShort>Profile</XPC_L3_ManageProfilesShort>
+  <XPC_L3_ResetDefaultsTip>Reset all XP Customizer settings, including ON/OFF switches and curve modes, to this mod's installation defaults. Existing profiles are preserved. Missing bundled profiles (Long x3 / Very Long x6) are recreated on confirmed Reset.</XPC_L3_ResetDefaultsTip>
+  <XPC_L3_ResetDefaultsLabel>Reset to Mod Defaults</XPC_L3_ResetDefaultsLabel>
+  <XPC_L3_ReserveTitle>Level 20 reserve</XPC_L3_ReserveTitle>
+  <XPC_L3_ReserveDesc>Controls how much XP can be stored at level 20 before skill decay can push the skill back toward level 19.</XPC_L3_ReserveDesc>
+  <XPC_L3_ReserveMultiplier>Reserve multiplier</XPC_L3_ReserveMultiplier>
+  <XPC_L3_ReserveRange>Allowed range: 0.01x – 100.00x   |   Vanilla: 1.00x</XPC_L3_ReserveRange>
+  <XPC_L3F3_ReserveRangeMuted>Allowed range: 0.01x – 100.00x   |</XPC_L3F3_ReserveRangeMuted>
+  <XPC_L3F3_ReserveRangeVanilla>Vanilla: 1.00x</XPC_L3F3_ReserveRangeVanilla>
+  <XPC_L3_ReserveVanillaPrefix>Vanilla reserve XP:</XPC_L3_ReserveVanillaPrefix>
+  <XPC_L3_ReserveCustomPrefix>Custom reserve XP:</XPC_L3_ReserveCustomPrefix>
+</LanguageData>

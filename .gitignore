@@ -1,0 +1,20 @@
+# Visual Studio, MSBuild and C# build artifacts
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local/private machine paths and game runtime logs
+RimWorld.local.props
+**/Local.BuildPaths.props
+*.local.props
+*.log
+
+# Generated deliverables and Windows filesystem noise
+/dist/
+*.zip
+Thumbs.db
+Desktop.ini

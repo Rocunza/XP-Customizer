@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Decay_LevelTitle>기술 경험치 감소</XPC_Decay_LevelTitle>
+  <XPC_Decay_LevelDescription>기술 등급 1~20의 일일 경험치 감소량을 설정합니다. 바닐라 수치와 비교할 수 있으며 0등급은 보호됩니다. 등급별·기술별·기억력 보정은 서로 독립적입니다.</XPC_Decay_LevelDescription>
+  <XPC_Decay_LevelEnable>기술 등급별 경험치 감소 사용자 지정</XPC_Decay_LevelEnable>
+  <XPC_Decay_LevelOn>켜짐: 사용자 지정 경험치 감소량을 적용합니다.</XPC_Decay_LevelOn>
+  <XPC_Decay_LevelOff>꺼짐: 바닐라 경험치 감소를 적용합니다. 저장한 사용자 지정 값은 유지됩니다.</XPC_Decay_LevelOff>
+  <XPC_Decay_LevelHeader>기술 등급</XPC_Decay_LevelHeader>
+  <XPC_Decay_VanillaDailyHeader>바닐라 XP/일</XPC_Decay_VanillaDailyHeader>
+  <XPC_Decay_RatioHeader>배율 (x)</XPC_Decay_RatioHeader>
+  <XPC_Decay_CustomDailyHeader>사용자 XP/일</XPC_Decay_CustomDailyHeader>
+  <XPC_Decay_RatioDescription>배율을 변경하면 사용자 XP/일이 조정되며 사용자 XP/일 값만 저장됩니다. 기술 등급 1~9는 바닐라 값이 0이므로 사용자 XP/일을 직접 입력하세요.</XPC_Decay_RatioDescription>
+  <XPC_Decay_ResetAll>경험치 감소 설정을 바닐라로 복원</XPC_Decay_ResetAll>
+  <XPC_Decay_LevelRow>기술 등급 {0}</XPC_Decay_LevelRow>
+  <XPC_Decay_LevelZero>0 (최솟값)</XPC_Decay_LevelZero>
+  <XPC_Decay_MemoryTitle>기억력 특성의 경험치 감소 억제</XPC_Decay_MemoryTitle>
+  <XPC_Decay_MemoryDescription>0%는 감소 억제 없음, 100%는 경험치 감소 없음입니다. 두 특성을 모두 가지면 완벽한 기억력이 우선합니다. 바닐라 기준: 대단한 기억력 50.00%, 완벽한 기억력 100.00%.</XPC_Decay_MemoryDescription>
+  <XPC_Decay_GreatMemory>대단한 기억력 감소 억제</XPC_Decay_GreatMemory>
+  <XPC_Decay_PerfectMemory>완벽한 기억력 감소 억제</XPC_Decay_PerfectMemory>
+  <XPC_Decay_MemoryRange>허용 범위: 0.00%~100.00% (소수 둘째 자리). 특성 보유 시 적용되며 바닐라 수치로 설정하면 바닐라 효과를 유지합니다.</XPC_Decay_MemoryRange>
+  <XPC_Decay_SkillTitle>기술별 경험치 감소 배율</XPC_Decay_SkillTitle>
+  <XPC_Decay_SkillModified> (수정됨: {0})</XPC_Decay_SkillModified>
+  <XPC_Decay_SkillEnable>기술별 경험치 감소 배율 사용</XPC_Decay_SkillEnable>
+  <XPC_Decay_SkillDescription>일일 경험치 감소량 = 등급별 XP/일 × 기술별 배율 × 기억력 적용 후 남는 비율. 기능이 꺼져 있어도 저장된 배율로 미리보기를 표시합니다. 등급별 필요 경험치와 자동으로 연동되지 않습니다.</XPC_Decay_SkillDescription>
+  <XPC_Decay_SkillRange>허용 범위: 0.00x~100.00x   |   기본값: 1.00x   |   추가 기술도 기본값은 1.00x입니다.</XPC_Decay_SkillRange>
+  <XPC_Decay_SkillHeader>기술</XPC_Decay_SkillHeader>
+  <XPC_Decay_MultiplierHeader>배율 (x)</XPC_Decay_MultiplierHeader>
+  <XPC_Decay_PreviewHeader>20등급 XP/일 (미리보기)</XPC_Decay_PreviewHeader>
+  <XPC_Decay_SkillReset>모든 기술별 감소 배율을 1.00x로 초기화</XPC_Decay_SkillReset>
+  <XPC_Decay_SkillPreviewValue>{0} XP/일</XPC_Decay_SkillPreviewValue>
+  <XPC_Biotech_Title>바이오테크</XPC_Biotech_Title>
+  <XPC_Biotech_DlcInactive>바이오테크 DLC가 비활성화되어 있습니다. 이 설정을 사용하려면 바이오테크 DLC가 필요합니다.</XPC_Biotech_DlcInactive>
+  <XPC_Biotech_SkillGenesTitle>바이오테크 기술 적성 유전자</XPC_Biotech_SkillGenesTitle>
+  <XPC_Biotech_ComparisonDescription>바닐라 기술 적성 유전자의 수치와 사용자 설정을 비교합니다.</XPC_Biotech_ComparisonDescription>
+  <XPC_Biotech_PassionUntouched>열정 효과는 바닐라 규칙을 그대로 유지합니다.</XPC_Biotech_PassionUntouched>
+  <XPC_Biotech_Enable>바이오테크 기술 적성 유전자 사용자 지정</XPC_Biotech_Enable>
+  <XPC_Biotech_On>켜짐: 생성된 바이오테크 기술 적성 유전자 정의에 사용자 설정값을 적용합니다.</XPC_Biotech_On>
+  <XPC_Biotech_Off>꺼짐: XP Customizer가 바이오테크 기술 적성 유전자 정의를 수정하지 않습니다.</XPC_Biotech_Off>
+  <XPC_Biotech_GeneAwful>끔찍한 기술 적성</XPC_Biotech_GeneAwful>
+  <XPC_Biotech_GenePoor>나쁜 기술 적성</XPC_Biotech_GenePoor>
+  <XPC_Biotech_GeneStrong>좋은 기술 적성</XPC_Biotech_GeneStrong>
+  <XPC_Biotech_GeneGreat>뛰어난 기술 적성</XPC_Biotech_GeneGreat>
+  <XPC_Biotech_PassionNone>바닐라 열정 효과: 없음</XPC_Biotech_PassionNone>
+  <XPC_Biotech_PassionRemove>바닐라 열정 효과: 해당 기술의 열정이 모두 제거됩니다.</XPC_Biotech_PassionRemove>
+  <XPC_Biotech_PassionAdd>바닐라 열정 효과: 해당 기술의 열정이 한 단계 증가합니다.</XPC_Biotech_PassionAdd>
+  <XPC_Biotech_Reset>바이오테크 설정을 바닐라로 복원</XPC_Biotech_Reset>
+  <XPC_Biotech_Aptitude>적성</XPC_Biotech_Aptitude>
+  <XPC_Biotech_Complexity>복잡도</XPC_Biotech_Complexity>
+  <XPC_Biotech_Metabolism>대사 효율</XPC_Biotech_Metabolism>
+  <XPC_Biotech_Attribute>속성</XPC_Biotech_Attribute>
+  <XPC_Biotech_Vanilla>바닐라</XPC_Biotech_Vanilla>
+  <XPC_Biotech_Custom>사용자 지정</XPC_Biotech_Custom>
+</LanguageData>

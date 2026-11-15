@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_N1R2S2_RecoveryTitle>Discard unfinished Skilltrainer input?</XPC_N1R2S2_RecoveryTitle>
+  <XPC_N1R2S2_RecoveryBody>Skilltrainer strength has unfinished numeric text. Discard ONLY this text and restore display of the currently accepted multiplier, then retry opening profiles? This does not undo numeric values already accepted while typing. Skill-specific Skilltrainer multipliers and other settings remain unchanged.</XPC_N1R2S2_RecoveryBody>
+  <XPC_N1R2S2_RecoveryConfirm>Discard and Continue</XPC_N1R2S2_RecoveryConfirm>
+  <XPC_N1R2S2_RecoveryCancel>Keep Editing</XPC_N1R2S2_RecoveryCancel>
+  <XPC_N1R2S2_RecoveryStale>XP Customizer: the Skilltrainer input or another editor changed. No unfinished text was discarded.</XPC_N1R2S2_RecoveryStale>
+</LanguageData>

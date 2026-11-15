@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Curve_Diminishing>Diminishing</XPC_Curve_Diminishing>
+  <XPC_Curve_Linear>Linear</XPC_Curve_Linear>
+  <XPC_Curve_Accelerating>Accelerating</XPC_Curve_Accelerating>
+  <XPC_Curve_LowCurvature>Low curvature</XPC_Curve_LowCurvature>
+  <XPC_Curve_HighCurvature>High curvature</XPC_Curve_HighCurvature>
+  <XPC_Curve_CurvatureHelp>Curvature: 0–200%. The specified anchor multiplier stays fixed.</XPC_Curve_CurvatureHelp>
+  <XPC_Curve_FurtherCurvatureHelp>Curvature: 0–200%. The configured anchor multiplier stays fixed.</XPC_Curve_FurtherCurvatureHelp>
+  <XPC_Curve_GwsCurvatureHelp>Curvature changes curve shape, not the chosen anchor multiplier. 0% = mild, 200% = strong.</XPC_Curve_GwsCurvatureHelp>
+  <XPC_Cons_LowTitle>Low consciousness (below 100%)</XPC_Cons_LowTitle>
+  <XPC_Cons_HighTitle>High consciousness (above 100%)</XPC_Cons_HighTitle>
+  <XPC_Cons_LowEnabled>Enable low-consciousness penalty</XPC_Cons_LowEnabled>
+  <XPC_Cons_HighEnabled>Enable high-consciousness bonus</XPC_Cons_HighEnabled>
+  <XPC_Cons_LowAnchor>Low anchor (% consciousness)</XPC_Cons_LowAnchor>
+  <XPC_Cons_HighAnchor>High anchor (% consciousness)</XPC_Cons_HighAnchor>
+  <XPC_Cons_LowFactor>Multiplier at low anchor (x)</XPC_Cons_LowFactor>
+  <XPC_Cons_HighFactor>Multiplier at high anchor (x)</XPC_Cons_HighFactor>
+  <XPC_Cons_DiminishingLimit>Diminishing limit (x)</XPC_Cons_DiminishingLimit>
+  <XPC_Cons_SafetyCap>High safety cap (x)</XPC_Cons_SafetyCap>
+  <XPC_Cons_AnchorLimitHelp>Asymptotic limit. High anchor remains exact; values stay below this limit.</XPC_Cons_AnchorLimitHelp>
+  <XPC_Cons_AnchorSafetyHelp>Hard technical cap, not a theoretical limit. The chosen high anchor remains exact.</XPC_Cons_AnchorSafetyHelp>
+  <XPC_Cons_FurtherLimitHelp>Asymptotic limit; the high anchor stays exact.</XPC_Cons_FurtherLimitHelp>
+  <XPC_Cons_FurtherSafetyHelp>Hard cap; the high anchor stays exact.</XPC_Cons_FurtherSafetyHelp>
+  <XPC_Cons_Title>Consciousness learning</XPC_Cons_Title>
+  <XPC_Cons_Description>Adjust how consciousness affects skill learning.</XPC_Cons_Description>
+  <XPC_Cons_Enable>Enable Consciousness effects</XPC_Cons_Enable>
+  <XPC_Cons_DisabledHelp>OFF: saved settings are preserved.</XPC_Cons_DisabledHelp>
+  <XPC_Cons_SpeedTitle>Learning speed</XPC_Cons_SpeedTitle>
+  <XPC_Cons_CapacityTitle>Daily Learning Capacity</XPC_Cons_CapacityTitle>
+  <XPC_Cons_FurtherTitle>Further Learning</XPC_Cons_FurtherTitle>
+  <XPC_Cons_ResetDefaults>Restore Cons Mod Defaults</XPC_Cons_ResetDefaults>
+  <XPC_Cons_ResetVanilla>Restore Cons to Vanilla (master OFF)</XPC_Cons_ResetVanilla>
+  <XPC_Cons_ResetDefaultsTip>Restore Speed, Capacity and Further V2 curves. Master and sub-switches remain unchanged.</XPC_Cons_ResetDefaultsTip>
+  <XPC_Cons_ResetVanillaTip>Disable only XP Customizer Consciousness effects. Other tabs, including GWS and Learning, are unchanged.</XPC_Cons_ResetVanillaTip>
+  <XPC_Cons_AnchorIntro>100% consciousness = x1.00. Speed and capacity have separate curves.</XPC_Cons_AnchorIntro>
+  <XPC_Cons_SpeedLowPreview>Low consciousness -&gt; learning speed</XPC_Cons_SpeedLowPreview>
+  <XPC_Cons_SpeedHighPreview>High consciousness -&gt; learning speed</XPC_Cons_SpeedHighPreview>
+  <XPC_Cons_CapacityLowPreview>Low consciousness -&gt; daily capacity</XPC_Cons_CapacityLowPreview>
+  <XPC_Cons_CapacityHighPreview>High consciousness -&gt; daily capacity</XPC_Cons_CapacityHighPreview>
+  <XPC_Cons_FurtherIntro>Post-cap base efficiency x Consciousness multiplier + Mental threshold adjustment (pp).</XPC_Cons_FurtherIntro>
+  <XPC_Cons_FurtherCurrentButton>Current setting ({0}%)</XPC_Cons_FurtherCurrentButton>
+  <XPC_Cons_FurtherCustomButton>Custom preview</XPC_Cons_FurtherCustomButton>
+  <XPC_Cons_FurtherCurrentDetail>Preview base post-cap efficiency: {0}% (Learning tab setting)</XPC_Cons_FurtherCurrentDetail>
+  <XPC_Cons_FurtherExampleLabel>Example base post-cap efficiency</XPC_Cons_FurtherExampleLabel>
+  <XPC_Cons_FurtherPreviewHelp>Preview only: Mental Threshold adjustment excluded. Custom values never change gameplay settings.</XPC_Cons_FurtherPreviewHelp>
+  <XPC_Cons_FurtherLowPreview>Low consciousness -&gt; multiplier and post-cap efficiency</XPC_Cons_FurtherLowPreview>
+  <XPC_Cons_FurtherHighPreview>High consciousness -&gt; multiplier and post-cap efficiency</XPC_Cons_FurtherHighPreview>
+  <XPC_Cons_FurtherPostCap>Post-cap: {0}%</XPC_Cons_FurtherPostCap>
+  <XPC_Cons_FurtherSelectedAnchor>Selected anchor: {0}% consciousness = x{1} | {2}</XPC_Cons_FurtherSelectedAnchor>
+  <XPC_Cons_FurtherPostCapUnavailable>Post-cap: —</XPC_Cons_FurtherPostCapUnavailable>
+  <XPC_Gws_Title>GWS Learning Factor</XPC_Gws_Title>
+  <XPC_Gws_Description>Multiply learning speed by Global Work Speed. Work speed, daily XP capacity and direct XP are not changed.</XPC_Gws_Description>
+  <XPC_Gws_Enable>Enable GWS learning effects</XPC_Gws_Enable>
+  <XPC_Gws_DisabledHelp>OFF: Vanilla learning speed preserved. Saved GWS settings retained.</XPC_Gws_DisabledHelp>
+  <XPC_Gws_SkillsExpand>Skill-specific GWS application (12 skills)</XPC_Gws_SkillsExpand>
+  <XPC_Gws_SkillsHelp>Shooting, Melee and Social default OFF. Other nine skills default ON; learning only.</XPC_Gws_SkillsHelp>
+  <XPC_Gws_SkillsReset>Reset skill selection (Shooting / Melee / Social OFF)</XPC_Gws_SkillsReset>
+  <XPC_Gws_LowTitle>Low GWS (below 100%)</XPC_Gws_LowTitle>
+  <XPC_Gws_HighTitle>High GWS (above 100%)</XPC_Gws_HighTitle>
+  <XPC_Gws_LowEnabled>Apply low-GWS penalty</XPC_Gws_LowEnabled>
+  <XPC_Gws_HighEnabled>Apply high-GWS bonus</XPC_Gws_HighEnabled>
+  <XPC_Gws_LowAnchor>Low anchor (% GWS)</XPC_Gws_LowAnchor>
+  <XPC_Gws_HighAnchor>High anchor (% GWS)</XPC_Gws_HighAnchor>
+  <XPC_Gws_LowFactor>Multiplier at low anchor (x)</XPC_Gws_LowFactor>
+  <XPC_Gws_HighFactor>Multiplier at high anchor (x)</XPC_Gws_HighFactor>
+  <XPC_Gws_DiminishingLimit>Diminishing limit</XPC_Gws_DiminishingLimit>
+  <XPC_Gws_SafetyLimit>High safety limit</XPC_Gws_SafetyLimit>
+  <XPC_Gws_LowPreview>Low GWS examples</XPC_Gws_LowPreview>
+  <XPC_Gws_HighPreview>High GWS examples</XPC_Gws_HighPreview>
+  <XPC_Gws_LimitHelp>High GWS approaches this limit; the selected anchor keeps its configured multiplier.</XPC_Gws_LimitHelp>
+  <XPC_Gws_SafetyHelp>Linear and Accelerating may grow beyond the selected anchor. The safety cap still applies.</XPC_Gws_SafetyHelp>
+  <XPC_Gws_ReadingTitle>Reading XP exception</XPC_Gws_ReadingTitle>
+  <XPC_Gws_ReadingEnabled>Apply GWS to reading XP (optional; default OFF)</XPC_Gws_ReadingEnabled>
+  <XPC_Gws_ReadingHelp>OFF: ordinary reading Intellectual XP and textbook skill XP bypass GWS only. Book XP settings are unchanged.</XPC_Gws_ReadingHelp>
+  <XPC_Gws_ResetDefaults>Restore GWS Mod Defaults</XPC_Gws_ResetDefaults>
+  <XPC_Gws_ResetVanilla>Restore GWS to Vanilla (master OFF)</XPC_Gws_ResetVanilla>
+  <XPC_Gws_ResetDefaultsTip>Restore GWS anchor positions, factors, curves, curvature and default skill choices. Master, Low/High and reading switches stay as set.</XPC_Gws_ResetDefaultsTip>
+  <XPC_Gws_ResetVanillaTip>Disable GWS effects and reset only GWS settings. Other XP Customizer tabs are unchanged.</XPC_Gws_ResetVanillaTip>
+  <XPC_Gws_PreviewRelation>{0} (GWS % -&gt; learning multiplier)</XPC_Gws_PreviewRelation>
+  <XPC_Gws_SelectedAnchor>Selected anchor: {0}% GWS = x{1}</XPC_Gws_SelectedAnchor>
+</LanguageData>

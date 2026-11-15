@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L3F2_Tooltip_DailyCap>일일 학습 한도</XPC_L3F2_Tooltip_DailyCap>
+  <XPC_L3F2_Tooltip_BaseCapacity>기본값</XPC_L3F2_Tooltip_BaseCapacity>
+  <XPC_L3F2_Tooltip_CapacityFloor>최저 학습 한도 적용</XPC_L3F2_Tooltip_CapacityFloor>
+  <XPC_L3F2_Tooltip_Further>추가 학습</XPC_L3F2_Tooltip_Further>
+  <XPC_L3F2_Tooltip_BaseValue>기본값</XPC_L3F2_Tooltip_BaseValue>
+  <XPC_L3F2_Tooltip_Willpower>의지력</XPC_L3F2_Tooltip_Willpower>
+  <XPC_L3F2_Tooltip_FurtherFloor>최저값 적용</XPC_L3F2_Tooltip_FurtherFloor>
+  <XPC_L3F2_Tooltip_GwsSpeed>전역 작업 속도</XPC_L3F2_Tooltip_GwsSpeed>
+  <XPC_L3F2_Tooltip_Cons>의식</XPC_L3F2_Tooltip_Cons>
+</LanguageData>

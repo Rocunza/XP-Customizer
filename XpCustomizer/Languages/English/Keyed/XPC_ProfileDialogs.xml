@@ -1,0 +1,85 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_ProfileDialog_Cancel>Cancel</XPC_ProfileDialog_Cancel>
+  <XPC_ProfileDialog_ProfileLabel>Profile: {0}</XPC_ProfileDialog_ProfileLabel>
+  <XPC_ProfileDialog_ProfileId>Profile ID: {0}</XPC_ProfileDialog_ProfileId>
+  <XPC_ProfileDialog_Unnamed>(unnamed)</XPC_ProfileDialog_Unnamed>
+  <XPC_ProfileDialog_OverwriteTitle>Update Saved Profile Settings</XPC_ProfileDialog_OverwriteTitle>
+  <XPC_ProfileDialog_OverwriteWarning>Overwrite this profile’s saved XP settings with your CURRENT settings?
+The profile name and identity stay the same. A backup will be retained.</XPC_ProfileDialog_OverwriteWarning>
+  <XPC_ProfileDialog_OverwriteScope>Only the profile JSON changes. No settings are applied to this game, XP gameplay is not changed, and the mod settings XML is not saved.</XPC_ProfileDialog_OverwriteScope>
+  <XPC_ProfileDialog_OverwriteSuccess>Saved JSON verified. Backup retained.</XPC_ProfileDialog_OverwriteSuccess>
+  <XPC_ProfileDialog_OverwriteFailure>Not completed: {0} / {1}</XPC_ProfileDialog_OverwriteFailure>
+  <XPC_ProfileDialog_OverwriteButton>Overwrite Profile</XPC_ProfileDialog_OverwriteButton>
+  <XPC_ProfileDialog_RenameTitle>Rename Saved Profile</XPC_ProfileDialog_RenameTitle>
+  <XPC_ProfileDialog_RenameScope>Changes only the display name; stored XP settings are preserved.</XPC_ProfileDialog_RenameScope>
+  <XPC_ProfileDialog_RenameOriginal>Profile ID: {0}   |   Original: {1}</XPC_ProfileDialog_RenameOriginal>
+  <XPC_ProfileDialog_RenameNewName>New name (1–80 characters)</XPC_ProfileDialog_RenameNewName>
+  <XPC_ProfileDialog_RenameNameHint>Enter a valid name; control characters are not allowed.</XPC_ProfileDialog_RenameNameHint>
+  <XPC_ProfileDialog_RenameNoApply>Rename affects metadata only; no current game settings are applied.</XPC_ProfileDialog_RenameNoApply>
+  <XPC_ProfileDialog_RenameInvalidInput>Enter a valid name (1–80 characters).</XPC_ProfileDialog_RenameInvalidInput>
+  <XPC_ProfileDialog_RenameButton>Rename</XPC_ProfileDialog_RenameButton>
+  <XPC_ProfileDialog_RenameNull>Rename failed without a result.</XPC_ProfileDialog_RenameNull>
+  <XPC_ProfileDialog_RenameSuccess>Profile renamed.</XPC_ProfileDialog_RenameSuccess>
+  <XPC_ProfileDialog_RenameNoChange>Name unchanged. No file was written.</XPC_ProfileDialog_RenameNoChange>
+  <XPC_ProfileDialog_RenameInvalidSelection>Invalid selection. Close and reselect a profile.</XPC_ProfileDialog_RenameInvalidSelection>
+  <XPC_ProfileDialog_RenameConflict>File changed. Close, refresh, and select it again.</XPC_ProfileDialog_RenameConflict>
+  <XPC_ProfileDialog_RenameRecovery>Recovery required! Profile writes are blocked until restart and backup inspection.</XPC_ProfileDialog_RenameRecovery>
+  <XPC_ProfileDialog_RenameStorageFailure>Rename failed: {0}. Check the backup before retrying.</XPC_ProfileDialog_RenameStorageFailure>
+  <XPC_ProfileDialog_DeleteTitle>Move profile to Trash?</XPC_ProfileDialog_DeleteTitle>
+  <XPC_ProfileDialog_DeleteWarning>Only the selected profile JSON is moved to Trash. Current XP settings are not applied or changed. The profile can be restored later.</XPC_ProfileDialog_DeleteWarning>
+  <XPC_ProfileDialog_DeleteButton>Move to Trash</XPC_ProfileDialog_DeleteButton>
+  <XPC_ProfileDialog_TrashTitle>Permanently empty XP profile Trash?</XPC_ProfileDialog_TrashTitle>
+  <XPC_ProfileDialog_TrashCount>{0} deleted XP profiles will be permanently removed.</XPC_ProfileDialog_TrashCount>
+  <XPC_ProfileDialog_TrashWarning>This cannot be undone. Only XP Customizer profiles in Trash are targeted. Active profiles and current XP settings are not changed.</XPC_ProfileDialog_TrashWarning>
+  <XPC_ProfileDialog_TrashRecheck>The entire list is checked again before any file is deleted.</XPC_ProfileDialog_TrashRecheck>
+  <XPC_ProfileDialog_TrashButton>Permanently Delete</XPC_ProfileDialog_TrashButton>
+  <XPC_ProfileDialog_ReviewTitle>Apply Profile</XPC_ProfileDialog_ReviewTitle>
+  <XPC_ProfileDialog_ReviewSavedGame>Saved: {0}  |  Game: {1}</XPC_ProfileDialog_ReviewSavedGame>
+  <XPC_ProfileDialog_ReviewDifferent>Settings comparison: DIFFERENT from current settings.</XPC_ProfileDialog_ReviewDifferent>
+  <XPC_ProfileDialog_ReviewSame>Settings comparison: NO CHANGE to current settings.</XPC_ProfileDialog_ReviewSame>
+  <XPC_ProfileDialog_ReviewReplace>Replace current XP Customizer settings with this profile?</XPC_ProfileDialog_ReviewReplace>
+  <XPC_ProfileDialog_ReviewAlready>This profile is already applied. No settings need changing.</XPC_ProfileDialog_ReviewAlready>
+  <XPC_ProfileDialog_ReviewBackup>The saved profile JSON is not changed. Pause the game before applying.
+An independent backup of the current XP XML will be retained.</XPC_ProfileDialog_ReviewBackup>
+  <XPC_ProfileDialog_ReviewNoJsonChange>Applying does not alter the saved profile JSON.</XPC_ProfileDialog_ReviewNoJsonChange>
+  <XPC_ProfileDialog_ReviewApplyButton>Apply Profile</XPC_ProfileDialog_ReviewApplyButton>
+  <XPC_ProfileDialog_ReviewAlreadyButton>Already Applied</XPC_ProfileDialog_ReviewAlreadyButton>
+  <XPC_ProfileDialog_ReviewSuccess>Profile applied.</XPC_ProfileDialog_ReviewSuccess>
+  <XPC_ProfileDialog_ReviewFailure>Profile was not applied: {0} (diagnostic reason: {1})</XPC_ProfileDialog_ReviewFailure>
+  <XPC_ProfileDialog_ApplyPrepared>Prepared, not yet applied</XPC_ProfileDialog_ApplyPrepared>
+  <XPC_ProfileDialog_ApplyNoChange>No change</XPC_ProfileDialog_ApplyNoChange>
+  <XPC_ProfileDialog_ApplyRejected>Safety check rejected the apply</XPC_ProfileDialog_ApplyRejected>
+  <XPC_ProfileDialog_ApplyConflict>Profile or current settings changed</XPC_ProfileDialog_ApplyConflict>
+  <XPC_ProfileDialog_ApplyRecoveredNoWrite>Runtime restored; no XML write</XPC_ProfileDialog_ApplyRecoveredNoWrite>
+  <XPC_ProfileDialog_ApplyRecoveryRequired>Runtime recovery required</XPC_ProfileDialog_ApplyRecoveryRequired>
+  <XPC_ProfileDialog_ApplyPersistenceUncertain>XML persistence unverified; inspect backup</XPC_ProfileDialog_ApplyPersistenceUncertain>
+  <XPC_ProfileDialog_CreateRecoveryLock>Recovery required. Profile writes are blocked until restart and backup inspection.</XPC_ProfileDialog_CreateRecoveryLock>
+  <XPC_ProfileDialog_CreateInvalidInput>Enter a valid name (1–80 characters).</XPC_ProfileDialog_CreateInvalidInput>
+  <XPC_ProfileDialog_CreateNull>Save failed. No success was reported.</XPC_ProfileDialog_CreateNull>
+  <XPC_ProfileDialog_CreateSuccess>Profile created.</XPC_ProfileDialog_CreateSuccess>
+  <XPC_ProfileDialog_CreateInvalidName>Invalid profile name.</XPC_ProfileDialog_CreateInvalidName>
+  <XPC_ProfileDialog_CreateInvalidSettings>Current settings are invalid; nothing was saved.</XPC_ProfileDialog_CreateInvalidSettings>
+  <XPC_ProfileDialog_CreateInvalidProfile>Profile validation failed; nothing was saved.</XPC_ProfileDialog_CreateInvalidProfile>
+  <XPC_ProfileDialog_CreateStorageFailure>Could not save profile: {0}.</XPC_ProfileDialog_CreateStorageFailure>
+  <XPC_ProfileDialog_NotesTitle>Edit Profile Notes</XPC_ProfileDialog_NotesTitle>
+  <XPC_ProfileDialog_NotesLabel>Notes</XPC_ProfileDialog_NotesLabel>
+  <XPC_ProfileDialog_NotesCount>{0}/{1} characters</XPC_ProfileDialog_NotesCount>
+  <XPC_ProfileDialog_NotesSave>Save Notes</XPC_ProfileDialog_NotesSave>
+  <XPC_ProfileDialog_NotesConflict>Profile changed. Refresh and reopen Notes.</XPC_ProfileDialog_NotesConflict>
+  <XPC_ProfileDialog_NotesFailure>Notes were not saved: {0}.</XPC_ProfileDialog_NotesFailure>
+  <XPC_ProfileDialog_ReviewPauseNeeded>Pause the game to apply this profile.</XPC_ProfileDialog_ReviewPauseNeeded>
+  <!-- PNL1: UI-only localized descriptions for exact bundled v2 profile notes. -->
+  <XPC_PresetNotes_OfficialLong>Differences from Vanilla:
+- Total XP requirement ×3
+- Consciousness affects Learning Speed, Daily Learning Capacity, and Further Learning
+- GWS affects Learning Speed
+- Mental Threshold affects Further Learning
+- Biotech Aptitude: Awful -8 / Poor -4 / Strong +2 / Great +4</XPC_PresetNotes_OfficialLong>
+  <XPC_PresetNotes_OfficialVeryLong>Differences from Vanilla:
+- Total XP requirement ×6
+- Consciousness affects Learning Speed, Daily Learning Capacity, and Further Learning
+- GWS affects Learning Speed
+- Mental Threshold affects Further Learning
+- Biotech Aptitude: Awful -8 / Poor -4 / Strong +1 / Great +2</XPC_PresetNotes_OfficialVeryLong>
+</LanguageData>

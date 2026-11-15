@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Decay_LevelTitle>Skill decay</XPC_Decay_LevelTitle>
+  <XPC_Decay_LevelDescription>Set daily XP decay for skill levels 1-20. Vanilla values are shown for comparison. Level 0 remains protected. Level, skill, and memory adjustments are independent.</XPC_Decay_LevelDescription>
+  <XPC_Decay_LevelEnable>Customize skill decay by level</XPC_Decay_LevelEnable>
+  <XPC_Decay_LevelOn>ON: custom decay values are applied.</XPC_Decay_LevelOn>
+  <XPC_Decay_LevelOff>OFF: vanilla decay behavior. Saved custom values are preserved.</XPC_Decay_LevelOff>
+  <XPC_Decay_LevelHeader>Level</XPC_Decay_LevelHeader>
+  <XPC_Decay_VanillaDailyHeader>Vanilla XP/day</XPC_Decay_VanillaDailyHeader>
+  <XPC_Decay_RatioHeader>Ratio (x)</XPC_Decay_RatioHeader>
+  <XPC_Decay_CustomDailyHeader>Custom XP/day</XPC_Decay_CustomDailyHeader>
+  <XPC_Decay_RatioDescription>Ratio edits Custom XP/day; only Custom XP/day is saved. For levels 1-9, edit Custom XP/day directly (vanilla = 0).</XPC_Decay_RatioDescription>
+  <XPC_Decay_ResetAll>Restore all Decay settings to Vanilla</XPC_Decay_ResetAll>
+  <XPC_Decay_LevelRow>Level {0}</XPC_Decay_LevelRow>
+  <XPC_Decay_LevelZero>0 (minimum)</XPC_Decay_LevelZero>
+  <XPC_Decay_MemoryTitle>Memory trait decay reduction</XPC_Decay_MemoryTitle>
+  <XPC_Decay_MemoryDescription>0% means no decay reduction; 100% means no skill decay. Perfect Memory takes precedence when both traits exist. Vanilla Great Memory = 50.00%, Perfect Memory = 100.00%.</XPC_Decay_MemoryDescription>
+  <XPC_Decay_GreatMemory>Great Memory decay reduction</XPC_Decay_GreatMemory>
+  <XPC_Decay_PerfectMemory>Perfect Memory decay reduction</XPC_Decay_PerfectMemory>
+  <XPC_Decay_MemoryRange>Allowed: 0.00% - 100.00% (two decimal places). Values apply whenever the trait is present; vanilla values preserve vanilla.</XPC_Decay_MemoryRange>
+  <XPC_Decay_SkillTitle>Skill-specific decay multipliers</XPC_Decay_SkillTitle>
+  <XPC_Decay_SkillModified> (modified: {0})</XPC_Decay_SkillModified>
+  <XPC_Decay_SkillEnable>Use skill-specific decay multipliers</XPC_Decay_SkillEnable>
+  <XPC_Decay_SkillDescription>Daily decay = level XP/day × skill multiplier × memory remaining factor. Stored multipliers are previewed even while OFF. No automatic link to career XP.</XPC_Decay_SkillDescription>
+  <XPC_Decay_SkillRange>Allowed: 0.00x - 100.00x | Default 1.00x | Modded skills default to 1.00x.</XPC_Decay_SkillRange>
+  <XPC_Decay_SkillHeader>Skill</XPC_Decay_SkillHeader>
+  <XPC_Decay_MultiplierHeader>Multiplier (x)</XPC_Decay_MultiplierHeader>
+  <XPC_Decay_PreviewHeader>Level 20 XP/day (preview)</XPC_Decay_PreviewHeader>
+  <XPC_Decay_SkillReset>Reset all skill decay multipliers to 1.00x</XPC_Decay_SkillReset>
+  <XPC_Decay_SkillPreviewValue>{0} XP/day</XPC_Decay_SkillPreviewValue>
+  <XPC_Biotech_Title>Biotech</XPC_Biotech_Title>
+  <XPC_Biotech_DlcInactive>Biotech is not active. These settings require the Biotech DLC.</XPC_Biotech_DlcInactive>
+  <XPC_Biotech_SkillGenesTitle>Biotech skill genes</XPC_Biotech_SkillGenesTitle>
+  <XPC_Biotech_ComparisonDescription>Compare vanilla skill-gene values with your custom settings.</XPC_Biotech_ComparisonDescription>
+  <XPC_Biotech_PassionUntouched>Passion effects remain completely vanilla.</XPC_Biotech_PassionUntouched>
+  <XPC_Biotech_Enable>Customize Biotech skill genes</XPC_Biotech_Enable>
+  <XPC_Biotech_On>On: custom values apply to generated Biotech skill-gene defs.</XPC_Biotech_On>
+  <XPC_Biotech_Off>Off: XP Customizer does not modify Biotech skill-gene defs.</XPC_Biotech_Off>
+  <XPC_Biotech_GeneAwful>Awful</XPC_Biotech_GeneAwful>
+  <XPC_Biotech_GenePoor>Poor</XPC_Biotech_GenePoor>
+  <XPC_Biotech_GeneStrong>Strong</XPC_Biotech_GeneStrong>
+  <XPC_Biotech_GeneGreat>Great</XPC_Biotech_GeneGreat>
+  <XPC_Biotech_PassionNone>Vanilla passion effect: none</XPC_Biotech_PassionNone>
+  <XPC_Biotech_PassionRemove>Vanilla passion effect: removes all passion</XPC_Biotech_PassionRemove>
+  <XPC_Biotech_PassionAdd>Vanilla passion effect: adds one passion level</XPC_Biotech_PassionAdd>
+  <XPC_Biotech_Reset>Restore Biotech settings to Vanilla</XPC_Biotech_Reset>
+  <XPC_Biotech_Aptitude>Aptitude</XPC_Biotech_Aptitude>
+  <XPC_Biotech_Complexity>Complexity</XPC_Biotech_Complexity>
+  <XPC_Biotech_Metabolism>Metabolic efficiency</XPC_Biotech_Metabolism>
+  <XPC_Biotech_Attribute>Attribute</XPC_Biotech_Attribute>
+  <XPC_Biotech_Vanilla>Vanilla</XPC_Biotech_Vanilla>
+  <XPC_Biotech_Custom>Custom</XPC_Biotech_Custom>
+</LanguageData>

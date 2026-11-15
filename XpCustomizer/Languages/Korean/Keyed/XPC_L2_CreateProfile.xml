@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_L2_CreateTitle>현재 설정을 새 프로필로 저장</XPC_L2_CreateTitle>
+  <XPC_L2_CreateSeparateJson>별도의 JSON 파일을 생성합니다. 기존 프로필은 덮어쓰지 않습니다.</XPC_L2_CreateSeparateJson>
+  <XPC_L2_CreateCommittedOnly>확정된 숫자 설정만 저장됩니다. 저장하기 전에 편집을 마치세요.</XPC_L2_CreateCommittedOnly>
+  <XPC_L2_CreateNameLabel>프로필 이름 (1~80자)</XPC_L2_CreateNameLabel>
+  <XPC_L2_CreateNameHint>공백이 아닌 이름을 입력하세요. 제어 문자는 사용할 수 없습니다.</XPC_L2_CreateNameHint>
+  <XPC_L2_CreateCancel>취소</XPC_L2_CreateCancel>
+  <XPC_L2_CreateSaveNew>새 프로필 저장</XPC_L2_CreateSaveNew>
+</LanguageData>

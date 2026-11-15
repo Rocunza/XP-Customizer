@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_N1R1_RecoveryTitle>Discard unfinished numeric entry?</XPC_N1R1_RecoveryTitle>
+  <XPC_N1R1_RecoveryBody>The Total XP Multiplier has unfinished numeric text. Discard only this text, display the currently committed multiplier, and retry opening profiles? Other settings and profiles will not be reset. This does not undo values already accepted while typing.</XPC_N1R1_RecoveryBody>
+  <XPC_N1R1_RecoveryConfirm>Discard and Continue</XPC_N1R1_RecoveryConfirm>
+  <XPC_N1R1_RecoveryCancel>Keep Editing</XPC_N1R1_RecoveryCancel>
+  <XPC_N1R1_RecoveryStale>XP Customizer: the numeric draft changed or could not be verified, so it was not discarded. Settings are unchanged.</XPC_N1R1_RecoveryStale>
+  <XPC_N1R1_RecoveryStillBlocked>XP Customizer: another numeric editor is unfinished. Finish editing before opening profiles.</XPC_N1R1_RecoveryStillBlocked>
+</LanguageData>

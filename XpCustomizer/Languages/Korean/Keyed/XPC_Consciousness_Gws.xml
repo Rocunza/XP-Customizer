@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <XPC_Curve_Diminishing>체감</XPC_Curve_Diminishing>
+  <XPC_Curve_Linear>선형</XPC_Curve_Linear>
+  <XPC_Curve_Accelerating>가속</XPC_Curve_Accelerating>
+  <XPC_Curve_LowCurvature>낮은 구간 곡률</XPC_Curve_LowCurvature>
+  <XPC_Curve_HighCurvature>높은 구간 곡률</XPC_Curve_HighCurvature>
+  <XPC_Curve_CurvatureHelp>곡률: 0~200%. 지정한 기준점의 배율은 유지됩니다.</XPC_Curve_CurvatureHelp>
+  <XPC_Curve_FurtherCurvatureHelp>곡률: 0~200%. 설정한 기준점 배율은 그대로 유지됩니다.</XPC_Curve_FurtherCurvatureHelp>
+  <XPC_Curve_GwsCurvatureHelp>곡률은 곡선 형태만 바꾸며 기준점 배율은 유지합니다. 0% = 약함, 200% = 강함.</XPC_Curve_GwsCurvatureHelp>
+  <XPC_Cons_LowTitle>낮은 의식 (100% 미만)</XPC_Cons_LowTitle>
+  <XPC_Cons_HighTitle>높은 의식 (100% 초과)</XPC_Cons_HighTitle>
+  <XPC_Cons_LowEnabled>낮은 의식 페널티 사용</XPC_Cons_LowEnabled>
+  <XPC_Cons_HighEnabled>높은 의식 보너스 사용</XPC_Cons_HighEnabled>
+  <XPC_Cons_LowAnchor>낮은 의식 기준점 (%)</XPC_Cons_LowAnchor>
+  <XPC_Cons_HighAnchor>높은 의식 기준점 (%)</XPC_Cons_HighAnchor>
+  <XPC_Cons_LowFactor>낮은 기준점 배율 (x)</XPC_Cons_LowFactor>
+  <XPC_Cons_HighFactor>높은 기준점 배율 (x)</XPC_Cons_HighFactor>
+  <XPC_Cons_DiminishingLimit>체감 수렴 한계 (x)</XPC_Cons_DiminishingLimit>
+  <XPC_Cons_SafetyCap>높은 구간 안전 상한 (x)</XPC_Cons_SafetyCap>
+  <XPC_Cons_AnchorLimitHelp>체감 곡선의 수렴 한계입니다. 높은 기준점 값은 유지되며 배율은 한계 미만입니다.</XPC_Cons_AnchorLimitHelp>
+  <XPC_Cons_AnchorSafetyHelp>곡선의 이론적 한계가 아닌 기술적 상한입니다. 선택한 높은 기준점 값은 유지됩니다.</XPC_Cons_AnchorSafetyHelp>
+  <XPC_Cons_FurtherLimitHelp>체감 곡선의 수렴 한계입니다. 높은 기준점 값은 유지됩니다.</XPC_Cons_FurtherLimitHelp>
+  <XPC_Cons_FurtherSafetyHelp>절대 상한입니다. 높은 기준점 값은 유지됩니다.</XPC_Cons_FurtherSafetyHelp>
+  <XPC_Cons_Title>의식에 따른 학습</XPC_Cons_Title>
+  <XPC_Cons_Description>의식 수준이 스킬 학습에 미치는 영향을 설정합니다.</XPC_Cons_Description>
+  <XPC_Cons_Enable>의식 효과 사용</XPC_Cons_Enable>
+  <XPC_Cons_DisabledHelp>꺼짐: 저장된 의식 설정은 유지됩니다.</XPC_Cons_DisabledHelp>
+  <XPC_Cons_SpeedTitle>학습 속도</XPC_Cons_SpeedTitle>
+  <XPC_Cons_CapacityTitle>일일 학습 한도</XPC_Cons_CapacityTitle>
+  <XPC_Cons_FurtherTitle>한도 초과 학습</XPC_Cons_FurtherTitle>
+  <XPC_Cons_ResetDefaults>의식 모드 기본값 복원</XPC_Cons_ResetDefaults>
+  <XPC_Cons_ResetVanilla>의식을 바닐라로 복원 (전체 OFF)</XPC_Cons_ResetVanilla>
+  <XPC_Cons_ResetDefaultsTip>속도·학습 한도·한도 초과 학습 곡선을 복원합니다. 전체 및 하위 스위치는 유지됩니다.</XPC_Cons_ResetDefaultsTip>
+  <XPC_Cons_ResetVanillaTip>XP Customizer의 의식 효과만 비활성화합니다. 전역작업속도 및 학습 등 다른 탭은 변경하지 않습니다.</XPC_Cons_ResetVanillaTip>
+  <XPC_Cons_AnchorIntro>의식 100% = x1.00입니다. 학습 속도와 일일 한도에 별도 곡선을 적용합니다.</XPC_Cons_AnchorIntro>
+  <XPC_Cons_SpeedLowPreview>낮은 의식 → 학습 속도</XPC_Cons_SpeedLowPreview>
+  <XPC_Cons_SpeedHighPreview>높은 의식 → 학습 속도</XPC_Cons_SpeedHighPreview>
+  <XPC_Cons_CapacityLowPreview>낮은 의식 → 일일 한도</XPC_Cons_CapacityLowPreview>
+  <XPC_Cons_CapacityHighPreview>높은 의식 → 일일 한도</XPC_Cons_CapacityHighPreview>
+  <XPC_Cons_FurtherIntro>한도 초과 기본 효율 × 의식 배율 + 정신붕괴 임계값 보정(pp)입니다.</XPC_Cons_FurtherIntro>
+  <XPC_Cons_FurtherCurrentButton>현재 설정 ({0}%)</XPC_Cons_FurtherCurrentButton>
+  <XPC_Cons_FurtherCustomButton>사용자 지정 미리보기</XPC_Cons_FurtherCustomButton>
+  <XPC_Cons_FurtherCurrentDetail>미리보기 기본 한도 초과 효율: {0}% (학습 탭 설정)</XPC_Cons_FurtherCurrentDetail>
+  <XPC_Cons_FurtherExampleLabel>예시 기본 한도 초과 효율</XPC_Cons_FurtherExampleLabel>
+  <XPC_Cons_FurtherPreviewHelp>미리보기 전용: 정신붕괴 임계값 보정은 제외됩니다. 사용자 지정 예시는 실제 게임 설정을 변경하지 않습니다.</XPC_Cons_FurtherPreviewHelp>
+  <XPC_Cons_FurtherLowPreview>낮은 의식 → 배율 및 한도 초과 효율</XPC_Cons_FurtherLowPreview>
+  <XPC_Cons_FurtherHighPreview>높은 의식 → 배율 및 한도 초과 효율</XPC_Cons_FurtherHighPreview>
+  <XPC_Cons_FurtherPostCap>한도 후: {0}%</XPC_Cons_FurtherPostCap>
+  <XPC_Cons_FurtherSelectedAnchor>선택한 기준점: 의식 {0}% = x{1} | {2}</XPC_Cons_FurtherSelectedAnchor>
+  <XPC_Cons_FurtherPostCapUnavailable>한도 후: —</XPC_Cons_FurtherPostCapUnavailable>
+  <XPC_Gws_Title>전역작업속도 학습 배율</XPC_Gws_Title>
+  <XPC_Gws_Description>전역작업속도에 따라 학습 속도를 보정합니다. 작업 속도·일일 XP 한도·직접 XP는 변경하지 않습니다.</XPC_Gws_Description>
+  <XPC_Gws_Enable>전역작업속도 학습 효과 사용</XPC_Gws_Enable>
+  <XPC_Gws_DisabledHelp>꺼짐: 바닐라 학습 속도를 유지하며 저장된 전역작업속도 설정은 보존됩니다.</XPC_Gws_DisabledHelp>
+  <XPC_Gws_SkillsExpand>스킬별 전역작업속도 적용 (12종)</XPC_Gws_SkillsExpand>
+  <XPC_Gws_SkillsHelp>사격·격투·사교는 기본 OFF, 나머지 9개 스킬은 기본 ON입니다. 학습에만 적용됩니다.</XPC_Gws_SkillsHelp>
+  <XPC_Gws_SkillsReset>스킬 선택 초기화 (사격·격투·사교 OFF)</XPC_Gws_SkillsReset>
+  <XPC_Gws_LowTitle>낮은 전역작업속도 (100% 미만)</XPC_Gws_LowTitle>
+  <XPC_Gws_HighTitle>높은 전역작업속도 (100% 초과)</XPC_Gws_HighTitle>
+  <XPC_Gws_LowEnabled>낮은 전역작업속도 페널티 적용</XPC_Gws_LowEnabled>
+  <XPC_Gws_HighEnabled>높은 전역작업속도 보너스 적용</XPC_Gws_HighEnabled>
+  <XPC_Gws_LowAnchor>낮은 전역작업속도 기준점 (%)</XPC_Gws_LowAnchor>
+  <XPC_Gws_HighAnchor>높은 전역작업속도 기준점 (%)</XPC_Gws_HighAnchor>
+  <XPC_Gws_LowFactor>낮은 기준점 배율 (x)</XPC_Gws_LowFactor>
+  <XPC_Gws_HighFactor>높은 기준점 배율 (x)</XPC_Gws_HighFactor>
+  <XPC_Gws_DiminishingLimit>체감 수렴 한계</XPC_Gws_DiminishingLimit>
+  <XPC_Gws_SafetyLimit>높은 구간 안전 상한</XPC_Gws_SafetyLimit>
+  <XPC_Gws_LowPreview>낮은 전역작업속도 예시</XPC_Gws_LowPreview>
+  <XPC_Gws_HighPreview>높은 전역작업속도 예시</XPC_Gws_HighPreview>
+  <XPC_Gws_LimitHelp>전역작업속도가 높아지면 이 한계에 수렴하며, 선택한 기준점 배율은 그대로 유지됩니다.</XPC_Gws_LimitHelp>
+  <XPC_Gws_SafetyHelp>선형 및 가속 곡선은 기준점을 넘어 증가할 수 있지만 안전 상한이 적용됩니다.</XPC_Gws_SafetyHelp>
+  <XPC_Gws_ReadingTitle>독서 XP 예외</XPC_Gws_ReadingTitle>
+  <XPC_Gws_ReadingEnabled>독서 XP에 전역작업속도 적용 (선택, 기본 OFF)</XPC_Gws_ReadingEnabled>
+  <XPC_Gws_ReadingHelp>꺼짐: 일반 독서의 지적 XP와 교과서 스킬 XP에는 전역작업속도 보정만 적용하지 않습니다. Book XP 설정은 유지됩니다.</XPC_Gws_ReadingHelp>
+  <XPC_Gws_ResetDefaults>전역작업속도 모드 기본값 복원</XPC_Gws_ResetDefaults>
+  <XPC_Gws_ResetVanilla>전역작업속도 바닐라 복원 (전체 OFF)</XPC_Gws_ResetVanilla>
+  <XPC_Gws_ResetDefaultsTip>전역작업속도 기준점·배율·곡선·곡률·기본 스킬 선택을 모드 기본값으로 복원합니다. 전체·낮음/높음·독서 스위치는 유지됩니다.</XPC_Gws_ResetDefaultsTip>
+  <XPC_Gws_ResetVanillaTip>전역작업속도 학습 보정만 끄고 관련 설정을 초기화합니다. 다른 XP Customizer 탭은 변경하지 않습니다.</XPC_Gws_ResetVanillaTip>
+  <XPC_Gws_PreviewRelation>{0} (전역작업속도 % → 학습 배율)</XPC_Gws_PreviewRelation>
+  <XPC_Gws_SelectedAnchor>선택한 기준점: 전역작업속도 {0}% = x{1}</XPC_Gws_SelectedAnchor>
+</LanguageData>

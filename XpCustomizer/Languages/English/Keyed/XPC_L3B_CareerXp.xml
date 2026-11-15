@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <XPC_L3B_TotalMultiplierTitle>Total XP multiplier</XPC_L3B_TotalMultiplierTitle>
+  <XPC_L3B_TotalMultiplierDescription>Controls the total XP required to progress from skill level 0 to 20.</XPC_L3B_TotalMultiplierDescription>
+  <XPC_L3B_TotalMultiplierRange>Allowed range: 0.01x – 100.00x   |   Vanilla: 1.00x</XPC_L3B_TotalMultiplierRange>
+  <XPC_L3F3_CareerRangeMuted>Allowed range: 0.01x – 100.00x   |</XPC_L3F3_CareerRangeMuted>
+  <XPC_L3F3_CareerRangeVanilla>Vanilla: 1.00x</XPC_L3F3_CareerRangeVanilla>
+  <XPC_L3B_VanillaTotalXp>Vanilla total XP: {0}</XPC_L3B_VanillaTotalXp>
+  <XPC_L3B_CustomTotalXp>Custom total XP: {0}</XPC_L3B_CustomTotalXp>
+  <XPC_L3B_DistributionTitle>XP distribution</XPC_L3B_DistributionTitle>
+  <XPC_L3B_DistributionDescription>Distributes the selected total XP across editable level ranges. These values are used by gameplay.</XPC_L3B_DistributionDescription>
+  <XPC_L3B_BoundariesApplyNotice>Stage boundaries can be edited below. Changes are applied only when you press Apply.</XPC_L3B_BoundariesApplyNotice>
+  <XPC_L3B_UseCustomDistribution>Use custom stage distribution</XPC_L3B_UseCustomDistribution>
+  <XPC_L3B_CurrentBoundaries>Current boundaries: {0}</XPC_L3B_CurrentBoundaries>
+  <XPC_L3B_WeightsHelp>Weights split unlocked XP. Use L to lock a stage share; at least one stage stays unlocked.</XPC_L3B_WeightsHelp>
+  <XPC_L3B_LevelRange>Level {0}–{1}</XPC_L3B_LevelRange>
+  <XPC_L3B_VanillaDistributionActive>Vanilla distribution is active. Stored stage weights are currently ignored.</XPC_L3B_VanillaDistributionActive>
+  <XPC_L3B_RoundingTitle>XP rounding</XPC_L3B_RoundingTitle>
+  <XPC_L3B_RoundingExact>Exact</XPC_L3B_RoundingExact>
+  <XPC_L3B_RoundingDescription>Rounds every individual level-up requirement. Exact keeps the calculated values unchanged.</XPC_L3B_RoundingDescription>
+  <XPC_L3B_RoundingFallback>Requested rounding: {0}   |   Effective: {1} because the current total XP is too small for the requested step.</XPC_L3B_RoundingFallback>
+  <XPC_L3B_HeaderStage>Stage</XPC_L3B_HeaderStage>
+  <XPC_L3B_HeaderWeight>Weight</XPC_L3B_HeaderWeight>
+  <XPC_L3B_HeaderShare>Share</XPC_L3B_HeaderShare>
+  <XPC_L3B_HeaderCustomXp>Custom XP</XPC_L3B_HeaderCustomXp>
+  <XPC_L3B_HeaderVanillaShare>Vanilla Share</XPC_L3B_HeaderVanillaShare>
+  <XPC_L3B_HeaderVanillaXp>Vanilla XP</XPC_L3B_HeaderVanillaXp>
+  <XPC_L3B_LockTip>L: Lock/unlock this stage's target XP share. Unlocked stages divide the remaining XP by Weight.</XPC_L3B_LockTip>
+  <XPC_L3B_LockedShareTip>Target {0}% | Applied {1}% (XP rounding may affect exact share)</XPC_L3B_LockedShareTip>
+</LanguageData>
